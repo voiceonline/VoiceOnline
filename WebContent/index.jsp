@@ -8,7 +8,6 @@
 	
 </head>
 <body>
-Test OPage1
 <%@include file="/pages/home.jsp" %>
 </body>
 </html>

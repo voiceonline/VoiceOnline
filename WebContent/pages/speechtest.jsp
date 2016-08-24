@@ -1,18 +1,6 @@
-Skip to content
-Personal Open source Business Explore
-Sign upSign inPricingBlogSupport
-This repository
-Search
- Watch 39  Star 238  Fork 362 GoogleChrome/webplatform-samples
- Code  Issues 3  Pull requests 6  Wiki  Pulse  Graphs
-Branch: master Find file Copy pathwebplatform-samples/webspeechdemo/webspeechdemo.html
-6ca0f01  Jan 13, 2013
-@gshires gshires first commit
-1 contributor
-RawBlameHistory     391 lines (375 sloc)  10.9 KB
 <!DOCTYPE html>
 <meta charset="utf-8">
-<title>Web Speech API Demo</title>
+
 <style>
   * {
     font-family: Verdana, Arial, sans-serif;
@@ -92,27 +80,10 @@ RawBlameHistory     391 lines (375 sloc)  10.9 KB
     padding: 0;
   }
 </style>
-<h1 class="center" id="headline">
-  <a href="http://dvcs.w3.org/hg/speech-api/raw-file/tip/speechapi.html">
-    Web Speech API</a> Demonstration</h1>
+
 <div id="info">
-  <p id="info_start">Click on the microphone icon and begin speaking.</p>
-  <p id="info_speak_now">Speak now.</p>
-  <p id="info_no_speech">No speech was detected. You may need to adjust your
-    <a href="//support.google.com/chrome/bin/answer.py?hl=en&amp;answer=1407892">
-      microphone settings</a>.</p>
-  <p id="info_no_microphone" style="display:none">
-    No microphone was found. Ensure that a microphone is installed and that
-    <a href="//support.google.com/chrome/bin/answer.py?hl=en&amp;answer=1407892">
-    microphone settings</a> are configured correctly.</p>
-  <p id="info_allow">Click the "Allow" button above to enable your microphone.</p>
-  <p id="info_denied">Permission to use microphone was denied.</p>
-  <p id="info_blocked">Permission to use microphone is blocked. To change,
-    go to chrome://settings/contentExceptions#media-stream</p>
-  <p id="info_upgrade">Web Speech API is not supported by this browser.
-     Upgrade to <a href="//www.google.com/chrome">Chrome</a>
-     version 25 or later.</p>
-</div>
+  
+
 <div class="right">
   <button id="start_button" onclick="startButton(event)">
     <img id="start_img" class="mic_button" src="mic.gif" alt="Start"></button>
@@ -215,7 +186,7 @@ for (var i = 0; i < langs.length; i++) {
 select_language.selectedIndex = 6;
 updateCountry();
 select_dialect.selectedIndex = 6;
-showInfo('info_start');
+//showInfo('info_start');
 function updateCountry() {
   for (var i = select_dialect.options.length - 1; i >= 0; i--) {
     select_dialect.remove(i);
@@ -240,25 +211,25 @@ if (!('webkitSpeechRecognition' in window)) {
   recognition.interimResults = true;
   recognition.onstart = function() {
     recognizing = true;
-    showInfo('info_speak_now');
+    //showInfo('info_speak_now');
     start_img.src = 'mic-animate.gif';
   };
   recognition.onerror = function(event) {
     if (event.error == 'no-speech') {
       start_img.src = 'mic.gif';
-      showInfo('info_no_speech');
+      //showInfo('info_no_speech');
       ignore_onend = true;
     }
     if (event.error == 'audio-capture') {
       start_img.src = 'mic.gif';
-      showInfo('info_no_microphone');
+     // showInfo('info_no_microphone');
       ignore_onend = true;
     }
     if (event.error == 'not-allowed') {
       if (event.timeStamp - start_timestamp < 1000) {
-        showInfo('info_blocked');
+        //showInfo('info_blocked');
       } else {
-        showInfo('info_denied');
+        //showInfo('info_denied');
       }
       ignore_onend = true;
     }
@@ -270,7 +241,7 @@ if (!('webkitSpeechRecognition' in window)) {
     }
     start_img.src = 'mic.gif';
     if (!final_transcript) {
-      showInfo('info_start');
+      //showInfo('info_start');
       return;
     }
     showInfo('');
@@ -304,7 +275,7 @@ if (!('webkitSpeechRecognition' in window)) {
 }
 function upgrade() {
   start_button.style.visibility = 'hidden';
-  showInfo('info_upgrade');
+  //showInfo('info_upgrade');
 }
 var two_line = /\n\n/g;
 var one_line = /\n/g;
@@ -357,12 +328,12 @@ function startButton(event) {
   final_span.innerHTML = '';
   interim_span.innerHTML = '';
   start_img.src = 'mic-slash.gif';
-  showInfo('info_allow');
+  //showInfo('info_allow');
   showButtons('none');
   start_timestamp = event.timeStamp;
 }
 function showInfo(s) {
-  if (s) {
+ /* if (s) {
     for (var child = info.firstChild; child; child = child.nextSibling) {
       if (child.style) {
         child.style.display = child.id == s ? 'inline' : 'none';
@@ -372,6 +343,7 @@ function showInfo(s) {
   } else {
     info.style.visibility = 'hidden';
   }
+ */
 }
 var current_style;
 function showButtons(style) {
