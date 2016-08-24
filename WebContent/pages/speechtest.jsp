@@ -94,26 +94,13 @@
   <p>
 </div>
 <div class="center">
-  <div class="sidebyside" style="text-align:right">
-    <button id="copy_button" class="button" onclick="copyButton()">
-      Copy and Paste</button>
-    <div id="copy_info" class="info">
-      Press Control-C to copy text.<br>(Command-C on Mac.)
-    </div>
-  </div>
-  <div class="sidebyside">
-    <button id="email_button" class="button" onclick="emailButton()">
-      Create Email</button>
-    <div id="email_info" class="info">
-      Text sent to default email application.<br>
-      (See chrome://settings/handlers to change.)
-    </div>
-  </div>
+  
+  
   <p>
   <div id="div_language">
     <select id="select_language" onchange="updateCountry()"></select>
     &nbsp;&nbsp;
-    <select id="select_dialect"></select>
+    <select id="select_dialect" style="display:none"></select>
   </div>
 </div>
 <script>
@@ -300,8 +287,8 @@ function copyButton() {
     recognizing = false;
     recognition.stop();
   }
-  copy_button.style.display = 'none';
-  copy_info.style.display = 'inline-block';
+ // copy_button.style.display = 'none';
+ // copy_info.style.display = 'inline-block';
   showInfo('');
 }
 function emailButton() {
@@ -312,8 +299,8 @@ function emailButton() {
   } else {
     createEmail();
   }
-  email_button.style.display = 'none';
-  email_info.style.display = 'inline-block';
+ // email_button.style.display = 'none';
+ // email_info.style.display = 'inline-block';
   showInfo('');
 }
 function startButton(event) {
@@ -351,9 +338,9 @@ function showButtons(style) {
     return;
   }
   current_style = style;
-  copy_button.style.display = style;
-  email_button.style.display = style;
-  copy_info.style.display = 'none';
-  email_info.style.display = 'none';
+ // copy_button.style.display = style;
+ // email_button.style.display = style;
+  //copy_info.style.display = 'none';
+ // email_info.style.display = 'none';
 }
 </script>
