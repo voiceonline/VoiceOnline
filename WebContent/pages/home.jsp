@@ -7,6 +7,7 @@
       <meta name="format-detection" content="telephone=no">
       <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
       <title>Home</title>
+      <script src='https://code.responsivevoice.org/responsivevoice.js'></script>
       <link rel="stylesheet" type="text/css" href="/VoiceOnline/resources/css/bootstrap.css">
       <link rel="stylesheet" type="text/css" href="/VoiceOnline/resources/css/icons.css">
       <link rel="stylesheet" type="text/css" href="/VoiceOnline/resources/css/rangeSlider.css">
@@ -330,24 +331,12 @@
       <div class="backToTop">
          <span class="icons UpW"></span>
       </div>
-	  <script src='https://code.responsivevoice.org/responsivevoice.js'></script>
-      <script src="/VoiceOnline/resources/js/jquery.js"></script>	
-      <script src="/VoiceOnline/resources/js/slider.js"></script>
-      <script src="/VoiceOnline/resources/js/bootstrap.js"></script>
-      <script src="/VoiceOnline/resources/js/nicescroll.js"></script>
-      <script src="/VoiceOnline/resources/js/custSelect.js"></script>
+	  <%@include file="speechtest.jsp" %>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>	
       <script src="/VoiceOnline/resources/js/effects.js"></script>
       
 	  <script>
-	  function searchitem(){
-		  alert("hello");
-	  var searchitem = $('.searchterm').val();
-	  if(searchitem == "" || searchitem == 'undefined'){
-	  responsiveVoice.speak("Please type or speak out loud your search item");
-	  }else{	  
-	  responsiveVoice.speak("Your search item is "+ searchitem);
-	  }
-	  }
+	 
 	  </script>
 	  
    </body>
