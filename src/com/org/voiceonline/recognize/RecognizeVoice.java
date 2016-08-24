@@ -77,7 +77,9 @@ public class RecognizeVoice {
 	      ex.printStackTrace ();
 	    }
 
-	    file.deleteOnExit ();	//Deletes the file as it is no longer necessary.
+	    //file.deleteOnExit ();	//Deletes the file as it is no longer necessary.
+	    
+	    file.delete();
 		
 		return recognizedText;
 	}
