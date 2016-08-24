@@ -36,7 +36,7 @@
                         <ul class="nav nav-tabs no-markup btmNav marginT10"></ul>
                      </div>
                      <div class="col-lg-4 col-sm-6 col-md-4 hidden-xs">
-                     <form action="/searchResults.jsp" id="search-form" method="post">
+                     <form action="pages/searchResults.jsp" id="search-form" method="get">
                         <div class="input-group custSelect hdrSearch">
                            <input type="text" id="search_box" name="searchterm" placeholder="Search" class="clearable form-control searchterm"/>
                            <span class="input-group-btn">

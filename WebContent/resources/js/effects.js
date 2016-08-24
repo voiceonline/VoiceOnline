@@ -113,11 +113,11 @@ function detectYOrN(spokentext) {
 
 function searchitem(){
 	
-	var form = document.createElement('form');
-	form.setAttribute('action', 'xg');
-	form.setAttribute('method', 'POST');
-	form.appendChild($("input[id='searchterm']"));
-	form.submit();
+	//var form = document.createElement('form');
+	//form.setAttribute('action', 'xg');
+	//form.setAttribute('method', 'POST');
+	//form.appendChild($("input[id='searchterm']"));
+	$('#search-form').submit();
 }
 
 function startRecognizing(successCallback, endCallback) {
