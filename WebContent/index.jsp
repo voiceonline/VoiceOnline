@@ -5,8 +5,10 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Insert title here</title>
+	
 </head>
 <body>
-Test OPage
+Test OPage1
+<%@include file="pages/home.jsp" %>
 </body>
 </html>

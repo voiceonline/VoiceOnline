@@ -1,0 +1,72 @@
+.seachResultCntnr{padding:44px 6% 0px;}
+.filterSearch{padding:44px 26px;background-color: #f3f4f5;}
+.filterSearch .heading{padding-bottom:48px;}
+.filterSearch .heading h2{margin: 0;font-size: 27px;}
+label.title.Ctgry {font-size: 17px;}
+div.title.Ctgry {font-size: 17px;cursor:pointer}
+.CtgryList li{padding-left:26px;font-size: 18px;}
+.CtgryList li.active{color:#1ca8dd;padding-left:0px;}
+.CtgryList li.active .Ctm_icons{margin-right:8px;}
+.totalNumber{margin-left: 5px;color:#aaacad;}
+.CtgryListButton li{margin-bottom: 12px;}
+.CtgryListButton .btn-default{background-color: transparent;color:#78797b;padding:12px;}
+.CtgryListButton .btn-default:nth-child(2),.CtgryListButton .btn-default:nth-child(3){margin-left: 10px;}   
+.CtgryListButton .active.btn-default{background-color: #fff;box-shadow: none;border:2px solid #19a8e0;color:#19a8e0;}
+.filterSearchResult{padding-left:25px;font-size:15px;}
+.filterSearchResult p{color:#7d7e80;}
+.filterSearchResult .heading{padding-bottom: 0px;}
+.rltdSrchTerm{color:#8e9091;margin-bottom: 25px;}
+.rltdSrchTerm .hlTerms{color: #1ca8dd;margin-left:5px;}
+.sRPromBanner{margin-top:35px;margin-bottom:35px;}
+.sRFound,.sRShop,.sRDiscover,.sRHelpandSupport{border-bottom:1px solid #e9eaeb;padding-bottom: 35px;clear:both;}
+.sRFound{color:#8e9091;font-size:18px;}
+.sRFound .rNumber{color:#5a5b5c;font-size:27px;}
+.featrCntnt h4{margin-top: 0px;margin-bottom:18px;}
+.featrHding .cpwTradebold{color: #aaacad; font-size: 24px;}
+.featrHding .viewAll{color: #1ca8dd;margin-left: 20px;}
+.sRShop .featrCntnt .img,.sRShop .featrCntnt .sRShopMobInfo{float:left;}
+.sRShop .featrCntnt .img{width: 120px;text-align: center;}
+.sRShop .featrCntnt .sRShopMobInfo{width:425px;}
+.sRShop .featrCntnt .sRShopMobInfo h2{margin-top:15px;font-family: RobotoBCondensed,'Roboto Condensed';font-size: 27px;}
+.featrCntnt h4{font-family: RobotoB, Roboto;font-weight: 700;color:#1ca8dd;}
+.featrCntnt .icons{margin-right: 5px;}
+.Ctglnk{cursor:pointer}
+/*All mobile Phones Potrait*/
+@media only screen and (min-width: 320px) and (max-width:767px) {
+.seachResultCntnr {padding: 10px 0% 0px;}
+.filterSearchResult .heading {padding-right: 20px;padding-left: 20px;}
+.filterSearchResult{padding-left: 0px;}
+.sRPromBanner{padding:10px;background: #f3f4f5;margin-top: 15px;margin-bottom: 15px;}
+.sRPromBanner img{width:100%;max-width: 768px;}
+.featrHding{margin-right:10px;margin-left:10px;}
+.featrHding .cpwTradebold{font-size: 21px;}
+.sRShop .featrCntnt .img {width: 100px;}
+.sRShop .featrCntnt .img img{width:40px;}
+.sRShop .featrCntnt .sRShopMobInfo{width:64%;}  
+.filterSearchResult{font-size: 12px;}
+.sRShop .featrCntnt .sRShopMobInfo h2{font-size: 21px;}
+.sRHelpandSupport .featrCntnt,.sRDiscover .featrCntnt{margin-left: 20px;margin-right: 20px;}
+.filterSearchResult .resultSummary{padding-left:20px; padding-right:20px;}
+.lightGrayBg{background-color: #E4E4E4;}
+
+}
+@media only screen and (min-width:768px) and (max-width:1439px){
+
+}
+/*Tablets Portrait*/
+@media only screen and (min-width:768px) and (max-width:1023px) {
+.seachResultCntnr {padding: 44px 3% 0px;}
+.filterSearchResult{padding-left: 0px;}
+.sRPromBanner img{width:100%;max-width: 768px;}
+
+}
+/*Desktop*/
+@media only screen and (min-width:1024px) and (max-width:1439px) {
+.sRPromBanner img{width:100%;max-width: 768px;}
+.sRShop .featrCntnt .sRShopMobInfo{width:425px;}
+
+}
+@media only screen and (min-width:1920px){
+
+}
+

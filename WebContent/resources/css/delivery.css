@@ -1,0 +1,443 @@
+#deliveryPages .header > .hTop .container-fluid .row > div:first-child{padding-left:27px;}
+#deliveryPages .header .hTop .container-fluid .row > div:last-child {padding-right: 27px;}
+.icons.LockW{margin: 0 10px 0 0px;}
+#deliveryPages .header > .hTop label{margin-top: 2px;  word-spacing: 1px;}
+#deliveryPages  .contact a{margin-left: 7px;}
+#deliveryPages .hBtm .row{padding:45px 0 0 0;background:#30c5fe;}
+#deliveryPages .content {padding: 18px 60px 18px 85px;}
+.pageHeading{padding-bottom:22px;border-bottom:3px dotted #e4e9eb;}
+.pageHeading.withBtn{overflow:hidden;padding:20px 0 32px 0;}
+.pageHeading.withBtn h1,.contentHeading h2,.formHeading h2{margin:0;}
+.pageHeading.withBtn .btn{margin-top:9px;}
+.contentHeading{padding:30px 0 27px 0;}
+.formHeading{padding: 0px 0 20px 0;}
+
+.deliveryPages > div{padding-right:25px;}
+/*Delivery Methods*/
+.deliveryMethds{}
+.deliveryMethds li{border:2px solid #cdcfd1;border-radius:4px;padding: 27px 0px 20px 33px;cursor:pointer;margin-top:15px;position:relative;}
+.deliveryMethds li:first-child{margin:0;}
+.deliveryMethds li div.deliveryImage{width:103px;}
+.deliveryMethds li:hover{border:2px solid #00adec;}
+.deliveryMethds span.Next {position: absolute;right:36px;top: 50%;margin-top:-9px;}
+.deliveryText{margin-top:-5px;}
+.deliveryText p:last-child{margin-top:7px;word-spacing: 1px;}
+#timedDlvry .deliveryImage{margin-top:-15px;}
+#collectDlvry .deliveryImage{margin-top:-3px;}
+/**/
+.defaultAddress{padding:0 0 34px 0;border-bottom: 1px solid #EEEBEB;}
+.defaultAddress address{font-family:RobotoR,Roboto;font-weight: 400;font-size:15px;color:#6e6f70;padding:18px 0;}
+.defaultAddress address .name{}
+.defaultDateTime{padding:0 0 30px 0;}
+.changeDateTime .cust-select{width:87%;}
+.costDiv{margin: 0px 0 0 53px;}
+#goToPayment{width:365px;}
+.deliverForm > div:first-child{margin:27px 0 0 -12px;}
+.form .form-group{xoverflow:hidden;}
+.deliverForm .form-group > input{float:left;}
+.deliverForm .form-group > label{display:block;}
+.deliverForm .form-group > input[type="text"],.deliverForm .form-group > input[type="email"],.deliverForm .form-group .cust-select{width:360px;}
+.deliverForm.form-group  input#title,.deliverForm .form-group  input#postcode{width:192px;}
+.deliverForm button[type="submit"]{width:365px;}
+.deliverForm button.findAdd{width:155px;}
+.cust-select#chooseAdd{width:360px;}
+.deliverForm .form-action{padding-top:30px;margin:30px 0 25px 0;border-top:3px dotted #e4e9eb;}
+/**/
+.backToDetails{padding:38px 0 25px 0;margin-top:30px;border-top:3px dotted #e4e9eb;}
+.backToDetails.withBtn #goToDetails{margin-top:20px;display: inline-block;}
+.cancelForm {margin-top:20px;display:inline-block;}
+/**/
+.vouchers{padding:20px 25px;margin-bottom:30px;font-family:RobotoR;font-size:15px;font-weight: 400;color:#5a5b5c;}
+.vouchers a{font-family:RobotoR,Roboto;font-weight: 400;font-size:15px;color:#1ca8dd;}
+.voucherSuccess{background:#e3fef7;}
+.voucherInvalid,.wantItBy{background:#fffade}
+.invalidReason{margin-left:35px;}
+.afterDiscount{margin-bottom:10px;}
+.afterDiscount > p{line-height:30px;}
+.deliveryActualCost{font-family:RobotoB;font-size:16px;color:#5a5b5c;}
+.deliveryActualCost > span{font-size: 16px;font-family: RobotoR, Roboto;font-weight: 400;color:#5a5b5c;}
+.discount{font-family:RobotoB;font-size:16px;color:#00b083;}
+.noDiscount{font-family:RobotoB;font-size:16px;color:#eea100;}
+.discount > span{font-family:RobotoR,Roboto;font-weight: 400;font-size:16px;color:#00b083;}
+.noDiscount > span{font-family:RobotoR,Roboto;font-weight: 400;font-size:16px;color:#eea100;}
+.vouchers.voucherInvalid,.wantItBy{padding:0;}
+.voucherInvalid div.contentHolder,.wantItBy div.contentHolder{padding: 20px 25px 13px 25px;}
+.tooltipRightBox > div.contentHolder{width:95%;}
+.tooltipRightBox > div.tooltipHolder{width:5%;text-align:center;border-left:1px solid #f2edd3;}
+div.tooltipHolder .addVerticalMargin{}
+
+/*Click and collect*/
+.defaultStore{border-bottom:1px solid #e4e9eb;padding-bottom:35px;}
+.storeInfo{padding-bottom:10px;}
+.storeInfo address > p{font-family:RobotoR;font-size:15px;font-weight: 400;color:#5a5b5c;}
+.storeInfo address > p.name{font-family:RobotoB;font-size:18px;color:#5a5b5c;}
+.storeAction a{margin-top:17px;display: inline-block;}
+.storeAction .btn-primary{width:365px;}
+.otherStores .custSelect.hdrSearch{width:405px;margin:0;}
+.storesFound{padding-right:25px;}
+.storesFound address > p{margin-left: 30px;}
+.storesFound address > p.name{margin:0;}
+.storesFound img {max-width:70%;float: right;}
+.storesFound > ul > li{padding:20px;border-bottom:1px solid #e4e9eb;}
+.storesFound > ul > li:hover{
+	border-bottom:none;
+	-webkit-box-shadow: 0px 0px 6px 0px rgba(230, 230, 230, 0.75);
+	-moz-box-shadow:0px 0px 6px 0px rgba(230, 230, 230, 0.75);
+	box-shadow:0px 0px 6px 0px rgba(230, 230, 230, 0.75);
+}
+.storesFound ul > li:last-child{border-bottom:none;}
+.storesFound .storeAction .btn-primary{width:210px;}
+.storesFound .CurentLocationMRL,.storesFound .CurentLocationMRL2{
+text-align: center;
+font-family:RobotoR;font-size:13px;color:#fff;
+cursor: default;
+padding-top: 2px;
+}
+.storesFound .distance{font-family: RobotoR;font-size: 15px;font-weight: 400;color: #5a5b5c;text-align: right;}
+.storesFound  img{margin-top:15px;clear: both;}
+.storesFound  .storeInfo{padding-bottom:25px;}
+/*Time facility*/
+.storeTimings li{font-family:RobotoR;font-size:15px;font-weight: 400;color:#5a5b5c;margin-bottom:10px;}
+.storeTimings li.active{font-family:RobotoM;}
+.storeTimings li > span{width:100px;display: inline-block;}
+.storeTimings li > span:last-child{width:120px;text-align:right;}
+.storesotherInfo{margin-left:30px;}
+.storesotherInfo > div{margin-top:30px;}
+.storesotherInfo > div:first-child{margin:0;}
+.storeFacilities  li > span{width:60px !important;}
+/* Google Map
+------------------------------------------------------*/
+#map{width:100%;height:395px;}
+#map .gmnoprint {left: auto !important;right: 10px !important;top: 10px !important;}
+#map .gm-style > .gmnoprint > .gmnoprint div[title="Zoom out"] {margin-top: 4px;}
+/**/
+.chat{padding:15px 20px 0 20px;border-radius:7px;border:1px solid #e4e9eb}
+.chat .chatText {
+font-family: RobotoM, Roboto;
+font-weight: 500;
+color: #5a5b5c;
+margin-left:20px;
+width:121px;
+display: inline-block;
+font-size: 18px;
+}
+.buyingPromotions{padding:35px 25px 25px 25px;background:#f3f4f5;border-radius:7px;}
+.buyingPromotions h1{font-family:RobotoB;font-size:18px;color:#5a5b5c;margin-top:0;}
+.buyingPromotions li{padding:20px;background:#fff;border-radius:7px;margin-top:10px;}
+.buyingPromotions span.Ctm_icons span.TradeInPromise{margin-top: 15px;}
+.buyingPromotions span.rounded, .buyingPromotions span.Ctm_icons {text-align: center;}
+.buyingPromotions span.rounded{height: 60px;width: 60px;}
+.buyingPromotions span.rounded .FreeNextDD {margin-top: 18px;}
+.buyingPromotions span.rounded .ItPaysToCompare {margin-top: 15px;}
+.buyingPromotions  .promotionHeading{font-family:cpw_tradeRegular;font-size:18px;}
+.price .promotionHeading{color:#ed4060;}
+.tradeIn .promotionHeading{color:#16ac81;}
+.freeDelievry .promotionHeading{color:#f7a80d;}
+.comparePromo .promotionHeading{color:#1391d1;}
+.buyingPromotions .promotionTag{width:70%;font-family:RobotoR;font-size:15px;font-weight: 400;color:#5a5b5c;}
+.orderSummary,.warranty{padding:20px 15px;background:#f3f4f5;border-radius:7px;}
+
+/*Tabs*/
+/**/
+ div[role="tabpanel"] .nav{border-bottom:none;}
+ div[role="tabpanel"] .nav > li{margin-left:10px;margin-bottom:-1px;}
+ div[role="tabpanel"] .nav > li:first-child{margin-left:0;}
+ div[role="tabpanel"] .nav > li > a {border-bottom:none;color:#fff;padding:15px 40px;font-size:18px;font-family:RobotoM;background-color:#4c7eb8;border: none;}
+ div[role="tabpanel"] .nav-tabs > li.active > a{color:#6e6f70;border: 1px solid transparent;background-color: #fff;}
+ div[role="tabpanel"] .tab-content{padding:20px 25px;background:#fff;border-radius: 0px 4px 4px 4px;}
+ 
+ /*Modal Changes*/
+ .modal-body div[role="tabpanel"] .tabHeading{margin:5px 0 0 30px;}
+.modal-body div[role="tabpanel"] .clickCollect .tabHeading{margin-top:25px;}
+#return .additionalInfo{margin-top:20px;}
+ #deliveryTab{height:575px;overflow-y:scroll;}
+ .modal-body div[role="tabpanel"] .timedDelievryInfo .tabHeading{margin:25px 0 0 30px;}
+ .additionalInfo{border-top:none;padding:0;}
+ .deliveryTimetable table tbody tr:nth-child(even) {background: #fafbfc;}
+ .deliveryTimetable table tbody tr:nth-child(odd) {background: #fff;}
+ .deliveryTimetable table th {font-family:RobotoB,Roboto;font-weight: 700;font-size:18px;color: #5a5b5c;padding: 8px 0;}
+ .deliveryTimetable table td {padding: 10px 5px;font-family: RobotoR;font-size:15px;color: #5a5b5c;}
+ .deliveryTimetable table th:first-child > span:last-child{margin-top:-4px;}
+ .deliveryTimetable table th:last-child > span:last-child{margin-top:-2px;}
+ 
+ #deliveryTimingsMenu .menuContent {background:transparent;}
+ .loader-animate {
+    -animation: spin 1s infinite linear;
+    -webkit-animation: spin 1s infinite linear;
+	-moz-animation: spin 1s infinite linear;
+}
+
+@-webkit-keyframes spin {
+    from { -webkit-transform: rotate(0deg);}
+    to { -webkit-transform: rotate(360deg);}
+}
+@-moz-keyframes spin {
+    from { -webkit-transform: rotate(0deg);}
+    to { -webkit-transform: rotate(360deg);}
+}
+@keyframes spin {
+    from { transform: scale(1) rotate(0deg);}
+    to { transform: scale(1) rotate(360deg);}
+}
+/*Checkout*/
+.inputSuggestions{font-size: 15px;font-family:RobotoI;font-weight: 400;color:#7d7e80;float:right;width:425px;margin-top: 10px;}
+.inputSuggestions span {float: left;margin: 5px 15px 0 0;}
+.inputSuggestions p {float: left;width:80%;}
+.creditCheck{background:#fafafa;border-top:1px solid #e4e9eb;border-bottom:1px solid #e4e9eb;padding:35px 25px 20px 25px;margin-left:-25px;}
+.creditCheck h1{font-family:RobotoI;font-weight: 400;color:#7d7e80;font-size: 18px;margin:0;  margin-bottom: 35px;}
+.creditCheck h1 a {vertical-align: middle;margin-left: 20px;}
+
+.columnSelect{float:left;}
+.columnSelect .cust-select:first-child{margin-left:0;}
+.columnSelect .cust-select{float:left;margin-left:20px;}
+.columnSelect .cust-select .dropdown-menu.pull-right {  min-width: 0;}
+
+.dateOfBirthSelection .cust-select{width:105px !important;}
+.currentEmployerExp .cust-select{width:115px !important;}
+.dateOfBirthSelection .cust-select .dropdown-menu.pull-right {  width: 105px !important;}
+.currentEmployerExp .cust-select .dropdown-menu.pull-right {  width: 115px !important;}
+.orderSummary > div:first-child{}
+ 
+#productsOrdered {margin-top:25px;}
+.prdctBox{position:relative;margin-top:15px;padding:20px 30px 8px 30px;background:#fff;border-radius:4px;}
+.prdctCode{font-family:RobotoR,Roboto;font-weight: 400;font-size:15px;color:#6e6f70;}
+.prdctCode span{font-family:RobotoB;font-size:15px;color:#5a5b5c;vertical-align: sub;font-weight:bold;}
+.prdctSummary > div{border-bottom:3px dotted #cad4de;padding:25px 0;}
+.prdctSummary > div:last-child{border-bottom:none;padding-bottom:0;}
+
+.prdctImg{width:8%;}
+.prdctImg img{max-width:100%;}
+.prdctDetails{width:92%;padding-left:25px;font-family:RobotoR,Roboto;font-weight: 400;font-size:15px;color:#6e6f70;}
+.prdctDetails h1{margin:0;font-family:RobotoBCondensed,Roboto Condensed;font-size:21px;color:#5a5b5c;}
+.prdctDetails > div{margin-top:15px;}
+.prdctDetails  span {font-family:RobotoB;font-size:15px;color:#5a5b5c;margin-left:3px;}
+.prdctCost{text-align:right;overflow:hidden;}
+.prdctCost span{font-family:cpw_tradebold;font-size:21px;text-transform: uppercase;color:#5a5b5c;}
+.networkDetails > div{padding:15px 0;text-align:center;background:#f3f4f5;border-left:1px solid #fff;margin:15px 0;font-family:RobotoR,Roboto;font-weight: 400;font-size:15px;color:#6e6f70;}
+.networkDetails > div:first-child{border-left:0;}
+.networkDetails .data{font-family:RobotoB;font-size:15px;color:#5a5b5c;margin-bottom:5px;}
+.bsktTriangleIndex.triangle-topleft-lightGray {
+  border-right-width: 47px;
+  border-top-width: 47px;
+  position: absolute;
+  top:0;
+  left:0;
+}
+.prdctCount {
+  border-right-width: 45px;
+  border-top-width: 45px;
+  font-family: cpw_tradebold;
+  font-size: 24px;
+  text-transform: uppercase;
+  color: #aaacad;
+  position: absolute;
+  top: -47px;
+  left: 0;
+}
+.prdctCount span {
+  position: absolute;
+  top: -45px;
+  left: 6px;
+}
+.showMore{padding:10px 0;}
+.showMore .rounded{height:22px;width:22px;background:#1ca8dd;margin-right:10px;}
+.showMore .rounded span{margin-top:7px;}
+.amountDetails {border-top:1px solid #d9dcde;padding: 25px 25px 0 25px;margin: 0 -15px 0 -15px;}
+.amountDetails .prdctCost{font-size: 15px;font-family: RobotoM, Roboto;font-weight: 500;color:#7d7e80;}
+.amountDetails  .discountApplicable{color: #00b083;font-size:21px;}
+.amountDetails .prdctCost span.deliveryCost{font-size:21px;}
+.amountDetails .prdctCost span{font-size:27px;}
+ /*Responsive css*/
+ /*All mobile Phones Potrait*/
+@media only screen and (min-width: 320px) and (max-width:767px) {
+.logo {position: relative;}
+.logo span.icons{position:absolute;left:15px;}
+#deliveryPages .hBtm .row{padding-top:15px;}
+.stepIndicator{padding-bottom:0;}
+.stepIndicator > ul > li span.path{height:3px;width:34px;margin-top: 15px;}
+.stepIndicator > ul > li span.current{height:35px;width:35px;border-width:3px;}
+.stepIndicator > ul > li.completed span.current {padding: 6px 0 0 3px;}
+.stepIndicator > ul > li > div.stepName {font-size: 15px;padding:5px 0 10px 0;}
+.stepIndicator > ul > li span.current > label{font-size:20px;}
+.stepIndicator div.arrow-up{border-left:10px solid transparent;border-right:10px solid transparent;border-bottom:10px solid #fff;margin-left:-10px;}
+#deliveryPages .content {padding: 0 20px;background: #fff;}
+.deliveryPages > div {padding-right: 0;}
+.deliveryPages .pageHeading{padding:15px 0;}
+.deliveryPages .pageHeading h1{margin:0;}
+.pageHeading.withBtn h1{float: none !important;}
+.pageHeading.withBtn button {margin-top:15px;}
+
+.contentHeading {padding:22px 0 20px 0;}
+.deliveryMethds {margin-left: -10px;  margin-right: -10px;}
+.deliveryMethds li {border: 1px solid #cdcfd1;padding:15px 20px;margin-top:10px;position:relative;}
+.deliveryMethds li:hover{border:1px solid #00adec;}
+.deliveryMethds li div.deliveryImage {width:50px;}
+.deliveryMethds li img {max-width:68%;}
+.deliveryMethds li > p{width: 89%;clear: both;margin-top: 2px;margin-left: -2px;}
+.deliveryMethds span.Next{right: 16px;margin-top: -12px;}
+.deliveryMethds li#collectDlvry > p{width:80%;}
+.deliveryText{width:59%;}
+#timedDlvry .deliveryImage{margin-top: -8px;}
+#timedDlvry .deliveryText,#collectDlvry .deliveryText {margin-top: -6px;}
+#collectDlvry .deliveryText{width:41%;}
+.backToDetails {padding-top:20px;margin-top:25px;text-align: center;}
+.backToDetails .icon,.cancelForm .icon{margin-right:7px !important;vertical-align:sub;}
+.defaultAddress{padding: 0 0 25px 0;}
+.defaultAddress address{padding:15px 0;font-size:14px;}
+.defaultDateTime {padding:0;}
+.backToDetails.withBtn button{padding: 8px 0;margin-bottom:25px;}
+.backToDetails.withBtn #goToDetails,.cancelForm{margin-top:0;}
+.voucherInvalid div.contentHolder, .wantItBy div.contentHolder {width:85%;padding:20px;border-right: none;}
+.tooltipRightBox > div.contentHolder {width:85%;padding:20px;}
+.tooltipRightBox > div.tooltipHolder {width:15%;text-align: right;border-left: none;}
+.tooltipRightBox > div.tooltipHolder span{margin: 10px 10px 0 0;}
+.vouchers {padding:15px 20px;}
+.vouchers.voucherInvalid.tooltipRightBox > div.contentHolder{width:92%;padding-right:0;padding-left: 10px;}
+.vouchers.voucherInvalid.tooltipRightBox > div.tooltipHolder{width:5%;}
+.costDiv{margin:0;}
+.invalidReason{margin-left:0;}
+.voucherErrorMsg{width:80%;}
+.form .form-group {min-height:70px;}
+.deliverForm .form-group > input[type="text"],.deliverForm .form-group > input[type="email"] {width:100%;}
+.form .form-group > label{font-size: 15px;}
+.form-group {margin-bottom: 20px;}
+.deliverForm .form-action {padding-top:25px;margin:25px 0;text-align: center;}
+.deliverForm button[type="submit"] {width: 100%;padding: 8px 0;margin-bottom: 20px;}
+.deliverForm.form-group input#title, .deliverForm .form-group input#postcode {width: 120px;}
+.cust-select#chooseAdd {width: 100%;}
+.deliverForm button.findAdd {width:auto;margin-left:10px;}
+.defaultStore{padding-bottom:25px;}
+.storeInfo address > p{font-size:13.5px;}
+.storeInfo address > p.name{font-size:15px;}
+.defaultStore img{max-width:76%;float:right;}
+.storeInfo {padding-bottom:0;}
+.storeAction > div{float:none !important;}
+.storeAction .btn-primary {width:100%;margin-top:20px;}
+.otherStores .custSelect.hdrSearch {width: 100%;}
+#map {height:192px;}
+#map .gmnoprint {right: 20px !important;top: 2px !important;}
+#map .gm-style > .gmnoprint > .gmnoprint div[title="Zoom out"] {  margin-top: 13px;}
+.storesFound > ul > li{padding:20px 0 20px 0;}
+.storesFound ul > li:last-child {padding-bottom:0;}
+.storesFound{padding:0;}
+.storesFound .storeInfo > div:first-child{width:57%;}
+.storesFound .storeInfo > div:last-child{width:43%;}
+.storesFound img{max-width:76%;float:right;}
+.storesFound .distance{text-align: right;}
+.storesFound .storeInfo {padding-bottom:0;}
+.storeAction a {margin-top:10px;}
+.storesFound .storeAction .btn-primary {width:100%;}
+.storesotherInfo > div {margin-top:25px;}
+.storeTimings li,.storeFacilities li{font-family: RobotoR;font-size: 13.5px;font-weight: 400;color: #707071;margin-bottom: 5px;}
+.chat {padding: 15px 17px 0 17px;clear:both;}
+.chat .chatText{font-size:15px;width:101px;margin-left:10px;}
+.chat .btn-primary{margin-left:10px;}
+.buyingPromotions {padding: 10px;}
+.buyingPromotions li {padding: 15px;}
+.buyingPromotions li:first-child{margin-top:0;}
+.buyingPromotions .promotionTag {width:100%;margin-top: 15px;}
+.buyingPromotions .promotionHeading {margin: 15px 0 0 15px;}
+/**/
+.formHeading {  padding: 0px 0 15px 0;}
+.inputSuggestions{width:100%;float:none;font-size:12px;}
+.inputSuggestions span{display:none;}
+.inputSuggestions p {float: none;width:90%;}
+.creditCheck {
+  padding: 25px 25px 20px 25px;
+  margin-left: -25px;
+  margin-right: -20px;
+}
+.creditCheck h1 {  font-size: 15px;  margin-bottom: 20px;}
+.deliverForm .form-group .cust-select{width:100%;}
+.dateOfBirthSelection .cust-select {width:30% !important;}
+.dateOfBirthSelection .cust-select#selectYr {width:37% !important;}
+.columnSelect.dateOfBirthSelection .cust-select {margin-left:1.5%;}
+.currentEmployerExp  .cust-select {width:48% !important;}
+.columnSelect.currentEmployerExp .cust-select {margin-left:4%;}
+.columnSelect.dateOfBirthSelection .cust-select:first-child,.columnSelect.currentEmployerExp .cust-select:first-child{margin-left:0;}
+}
+/*Tablets Portrait*/
+@media only screen and (min-width:768px) and (max-width:1023px) {
+	.stepIndicator > ul > li > div.stepName{font-size:27px;}
+	.stepIndicator > ul > li > div.stepName{padding-bottom:20px;}
+	#deliveryPages .content {padding:25px 20px 25px 20px;}	
+	.pageHeading {padding-bottom:25px;}
+	.deliveryMethds .deliveryText {width:67%;}
+	.backToDetails {padding-top:35px;margin-top: 40px;}
+	.contentHeading {padding:35px 0 30px 0;}
+	.defaultAddress address{padding:20px 0;}
+	.defaultAddress {padding: 0 0 35px 0;}
+	.defaultDateTime {padding: 0 0 25px 0;}
+	.storesFound > ul > li {padding: 10px;}
+	#map .gmnoprint {right: 20px !important;top: 4px !important;}
+	#map .gm-style > .gmnoprint > .gmnoprint div[title="Zoom out"] {margin-top: 13px;}
+	.leftWraper{float:left;width:50%;padding-right:15px;}
+	.rightWraper{float:right;width:50%;}
+	.chat {padding:15px;}
+	.chat .chatText{margin-left:0;font-size: 16px;}
+	.buyingPromotions{margin-top:0 !important;}
+	
+}
+@media only screen and (min-width:320px) and (max-width:1023px) {
+div[role="tabpanel"] .nav > li > a {
+color: #7d7e80;
+padding:13px 18px;
+font-size: 14px;
+font-family: RobotoM;
+background-color:transparent;
+border:1px solid #cdcfd1;
+border-bottom: none;
+}
+#deliveryMenu div[role="tabpanel"].inMenu .tab-content {padding:0;}
+#deliveryMenu .menuContent{padding:0;}
+div[role="tabpanel"] .tab-content {padding:18px 20px;}
+div[role="tabpanel"] .nav > li {margin-left:6px;margin-bottom: -1px;}
+div[role="tabpanel"].inMenu .nav {margin:0 5px;}
+div[role="tabpanel"].inMenu .nav > li > a {padding:7px 13px 5px 13px;font-size: 13px;min-height:50px;text-align:center;}
+div[role="tabpanel"].inMenu .nav > li {margin-left:5px;width:32%;}
+div[role="tabpanel"].inMenu .nav > li:first-child {margin-left: 0;}
+div[role="tabpanel"].inMenu .nav > li:last-child > a{padding:14px;}
+div[role="tabpanel"].inMenu .tabHeading {
+font-family: RobotoBCondensed;
+font-size:21px;
+color: #5a5b5c;
+margin: 0;
+padding: 0 0 5px 14px;
+width: 79%;
+}
+
+div[role="tabpanel"].inMenu .tabSubHeading {font-family: RobotoR;font-size: 14px;color: #6e6f70;}
+.collect {background-size:71px 70px;width:71px;height:70px;}
+.returns{background-size:70px 70px;width:70px;height:70px;}
+#deliveryMenuTab {  padding: 20px 8px 20px 10px;}
+#deliveryMenuTab img,#collectMenu img,#returnMenu img{max-width: 21%;}
+#collectMenu > div:first-child,#returnMenu > div:first-child{padding:18px 20px;}
+.sidemenu .additionalInfo{margin-top:25px;padding: 0 20px;}
+#returnMenu .tabHeading{margin-top:15px;}
+#returnMenu  .additionalInfo{margin-top:0;}
+.additionalInfo ol > li{font-size: 13.5px;margin: 15px 0 0 15px;}
+.questions li {padding: 15px 10px 15px 20px;}
+.questions li label.heading {font-size: 16px;font-family: RobotoM;width: 90%;}
+.questions li > div {font-size: 14px;padding-right: 25px;}
+.deliveryTimetable table tbody tr:nth-child(even) {background: #fff;}
+	.deliveryTimetable table tbody tr:nth-child(odd) {background: #fafbfc;}
+}
+/*Desktop*/
+@media only screen and (min-width:1024px) and (max-width:1439px) {
+	#deliveryPages .content {padding: 25px 40px;}
+	.deliveryPages > div {padding-right:20px;}
+	.contentHeading {padding:35px 0 30px 0;}
+	.deliveryMethds .deliveryText {width:70%;}
+	.backToDetails {padding-top:35px;margin-top:40px;}
+	.defaultDateTime {padding: 0 0 25px 0;}
+	.storesFound > ul > li {padding: 10px;}
+	#map .gmnoprint {right: 20px !important;top: 2px !important;}
+	#map .gm-style > .gmnoprint > .gmnoprint div[title="Zoom out"] {margin-top: 13px;}
+	.chat {padding: 15px 17px 0 17px;}
+	.chat .chatText{font-size:15px;width:101px;margin-left:10px;}
+	.chat .btn-primary{margin-left:10px;}
+	.buyingPromotions {padding: 35px 20px 20px 20px;}
+	.buyingPromotions li {padding: 20px 15px 20px 20px;}
+	.buyingPromotions .promotionTag {width:100%;font-size: 13px;margin-top: 15px;}
+	.buyingPromotions .promotionHeading {margin-left: 2px;}
+}
