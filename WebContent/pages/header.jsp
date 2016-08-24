@@ -37,7 +37,7 @@
                      </div>
                      <div class="col-lg-4 col-sm-6 col-md-4 hidden-xs">
                         <div class="input-group custSelect hdrSearch">
-                           <input type="text" placeholder="Search" class="clearable form-control searchterm"/>
+                           <input type="text" id="search_box" placeholder="Search" class="clearable form-control searchterm"/>
                            <span class="input-group-btn">
                            <button class="btn btn-primary" type="button" onclick='searchitem();' value='Play'>						   
                            <span class="Ctm_icons SearchIconH" aria-hidden="true"></span>

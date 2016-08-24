@@ -6,20 +6,7 @@ $(document)
 					console.log("ready");
 					var capturedValue = "";
 
-					/*function searchitem(){
-						  alert("hello");
-					var searchitem = $('.searchterm').val();
-					if(searchitem == "" || searchitem == 'undefined'){
-					responsiveVoice.speak("Please speak out loud your search item");
-					console.log("blank text");
-					}else{	  
-					responsiveVoice.speak("Your search item is "+ searchitem);
-					console.log("text**"+ searchitem);
-					}
-					};
 					
-					 window.setTimeout( searchitem, 5000 );
-					 */
 					initRecognition();
 					responsiveVoice.OnVoiceReady = function() {
 						if (responsiveVoice.voiceSupport()) {
@@ -119,7 +106,7 @@ function detectYOrN(spokentext) {
 	if(spokentext && typeof spokentext!="undefined" && spokentext.trim().toLowerCase() === "yes") {
 		responsiveVoice
 		.speak("Searching for " + selectedProduct);
-		
+		$('#search_box').val(selectedProduct);
 		
 	} else {
 		responsiveVoice
