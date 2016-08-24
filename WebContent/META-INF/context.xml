@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Context>
 
-<Resource name="jdbc/resourceplan"
+<Resource name="jdbc/voiceonline"
 
 auth="Container"
 
@@ -13,7 +13,7 @@ password="admin"
 
 driverClassName="com.mysql.jdbc.Driver"
 
-url="jdbc:mysql://localhost:3306/voice_online"
+url="jdbc:mysql://localhost:3306/voiceonline"
 
 maxActive="15"
 
