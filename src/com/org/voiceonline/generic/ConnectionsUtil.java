@@ -18,16 +18,16 @@ public class ConnectionsUtil {
 
 	public Connection getConnection() {
 		try {
-			/*Context initCtx = new InitialContext();
+			Context initCtx = new InitialContext();
 			Context envCtx = (Context) initCtx.lookup("java:comp/env");
 			DataSource ds = (DataSource)
 			envCtx.lookup("jdbc/voiceonline");			
 			conn = ds.getConnection();			
-			if(conn == null){*/
+			if(conn == null){
 				Class.forName("com.mysql.jdbc.Driver");
 				conn=DriverManager.getConnection(  
 				"jdbc:mysql://localhost:3306/voiceonline","root","admin");
-			/*}*/
+			}
 
 		} catch (Exception ex) {
 			ex.printStackTrace();
