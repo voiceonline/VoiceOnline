@@ -63,8 +63,8 @@
                            </span>
                         </div>
                         
-                        </form>
-                        <div class="searchResult">
+                      </form>
+                       <!--  <div class="searchResult">
                            <div class="searchCategories">
                               <label class="catTitle">RECOMENDED</label>
                               <ul class="catData">
@@ -134,8 +134,12 @@
                            <div class="allResult">
                               <a href="#">View all search results</a>
                            </div>
-                        </div>
+                        </div> -->
                      </div>
+                      <div class="col-lg-4 col-sm-4 col-md-4 col-xs-12"> 
+                      	<img id="mic_status" src="" width="50px" height="50px" />
+                      </div>
+                     
                      <div class="col-lg-4 col-sm-4 col-md-4 col-xs-12">
                         <div class="appNav pull-right">
                            <ul class="horizontal">
