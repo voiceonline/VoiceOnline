@@ -73,23 +73,20 @@ function captureSpokenValue() {
 	return spokentext;
 }
 
-function submitForm() {
+/*function submitForm() {
 	var searchTerm = $('#final_span').text();
 
-	var form = document.createElement('form');
-	form.setAttribute('action', 'xg');
-	form.setAttribute('method', 'POST');
+	
 
 	var input1 = document.createElement('input');
 	input1.setAttribute('type', 'text');
 	input1.setAttribute('name', 'searchWord');
 	input1.setAttribute('id', 'search');
 
-	form.appendChild(input1);
 
 	div.appendChild(form);
 }
-
+*/
 function speakOutProduct(spokentext) {
 	//responsiveVoice.speak("selected product is " + spokentext);
 	selectedProduct = spokentext;
@@ -105,8 +102,8 @@ function detectYOrN(spokentext) {
 	
 	if(spokentext && typeof spokentext!="undefined" && spokentext.trim().toLowerCase() === "yes") {
 		responsiveVoice
-		.speak("Searching for " + selectedProduct);
-		$('#search_box').val(selectedProduct);
+		.speak("Thanks for your input! Please wait while we are searching for " + selectedProduct);
+			$('#search_box').val(selectedProduct);
 		
 	} else {
 		responsiveVoice
@@ -114,8 +111,13 @@ function detectYOrN(spokentext) {
 	}
 }
 
-function searchForProduct(){
+function searchitem(){
 	
+	var form = document.createElement('form');
+	form.setAttribute('action', 'xg');
+	form.setAttribute('method', 'POST');
+	form.appendChild($("input[id='searchterm']"));
+	form.submit();
 }
 
 function startRecognizing(successCallback, endCallback) {
