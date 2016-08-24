@@ -4,28 +4,27 @@
 
 
 <div id="info">
-  
 
-<div class="right">
-  <button id="start_button" onclick="startButton(event)">
-    </button>
-</div>
-<div id="results" style="display:none">
-  <span id="final_span" class="final"></span>
-  <span id="interim_span" class="interim"></span>
-  <p>
-</div>
-<div class="center">
-  
-  
-  <p>
-  <div id="div_language" style="display:none">
-    <select id="select_language" onchange="updateCountry()"></select>
-    &nbsp;&nbsp;
-    <select id="select_dialect" ></select>
-  </div>
-</div>
-<script>
+
+	<div class="right">
+		<button id="start_button" ></button>
+		<!-- onclick="startButton(event)" -->
+	</div>
+	<div id="results" style="display: none">
+		<span id="final_span" class="final"></span> <span id="interim_span"
+			class="interim"></span>
+		<p>
+	</div>
+	<div class="center">
+
+
+		<p>
+		<div id="div_language" style="display: none">
+			<select id="select_language" onchange="updateCountry()"></select>
+			&nbsp;&nbsp; <select id="select_dialect"></select>
+		</div>
+	</div>
+ 	<!-- <script> 
 var langs =
 [['Afrikaans',       ['af-ZA']],
  ['Bahasa Indonesia',['id-ID']],
@@ -226,10 +225,13 @@ function emailButton() {
   showInfo('');
 }
 function startButton(event) {
+
   if (recognizing) {
+	 console.log("mic off");
     recognition.stop();
     return;
   }
+  console.log("mic on");
   final_transcript = '';
   recognition.lang = select_dialect.value;
   recognition.start();
@@ -265,4 +267,4 @@ function showButtons(style) {
   //copy_info.style.display = 'none';
  // email_info.style.display = 'none';
 }
-</script>
+</script> -->
