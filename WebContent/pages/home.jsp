@@ -50,39 +50,13 @@
                               </div>
                               
                            </div>
-                           <div class="sRPromBanner hidden-sm hidden-xs col-md-12 col-lg-12">
-                              <img alt="Promotional Banner" src="/VoiceOnline/resources/images/Promotion-banner.jpg" />
+                           <div class="sRPromBanner hidden-sm hidden-xs col-md-12 col-lg-12" >
+                              <img style="width:1000px" alt="Promotional Banner" src="/VoiceOnline/resources/images/coming_soon.png" />
                            </div>
                            <div class="sRPromBanner hidden-md hidden-lg col-sm-12 col-xs-12">
                               <img alt="Promotional Banner" src="/VoiceOnline/resources/images/Promotion-banner-mob.jpg" />
                            </div>
-                           <div class="sRShop marginB30">
-                              <div class="row featrHding marginB20">
-                                 <span class="cpwTradebold">SHOP</span>
-                                 
-                              </div>
-                              <div class="row featrCntnt marginB40">
-                                 <div class="img"><img src="/VoiceOnline/resources/images/sRPhone01.png" alt="Apple iPhone 6" /></div>
-                                 <div class="sRShopMobInfo">
-                                    <h2>Apple iPhone 6</h2>
-                                    <p>Available on Pay monthly, Pay as you go, SIM free and as on upgrade</p>
-                                 </div>
-                              </div>
-                              <div class="row featrCntnt marginB40">
-                                 <div class="img"><img src="/VoiceOnline/resources/images/sRPhone02.png" alt="Apple iPhone 6" /></div>
-                                 <div class="sRShopMobInfo">
-                                    <h2>Apple iPhone 5S</h2>
-                                    <p>Available on Pay monthly, Pay as you go, SIM free and as on upgrade</p>
-                                 </div>
-                              </div>
-                              <div class="row featrCntnt">
-                                 <div class="img"><img src="/VoiceOnline/resources/images/sRPhone01.png" alt="Apple iPhone 6" /></div>
-                                 <div class="sRShopMobInfo">
-                                    <h2>Apple iPhone 5c</h2>
-                                    <p>Available on Pay monthly, Pay as you go, SIM free and as on upgrade</p>
-                                 </div>
-                              </div>
-                           </div>
+                           
                            
                            
                            

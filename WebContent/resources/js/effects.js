@@ -27,9 +27,9 @@ $(document)
 									.setDefaultVoice("US English Female");
 
 							var welcomeText = "Welcome to Voisense!!";
-							responsiveVoice.speak(welcomeText);
+							//responsiveVoice.speak(welcomeText);
 							responsiveVoice
-									.speak("to search for a product speak out your product name ");
+									.speak(welcomeText + "to search for a product speak out your product name ");
 							
 							startRecognizing(speakOutProduct);
 							//startMic();stopMic
