@@ -7,5 +7,6 @@ public class Constants {
 	public static final String CATEGORY_NAME = "CATEGORY_NAME";
 	public static final String PRODUCT_IMAGE = "PRODUCT_IMAGE";
 	public static final String ATTRIB_MAP = "ATTRIB_MAP";
+	public static final String PRODUCT_DESC = "PRODUCT_DESC";
 	
 }

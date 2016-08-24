@@ -10,7 +10,7 @@
       <script src='https://code.responsivevoice.org/responsivevoice.js'></script>
       <link rel="stylesheet" type="text/css" href="/VoiceOnline/resources/css/bootstrap.css">
       <link rel="stylesheet" type="text/css" href="/VoiceOnline/resources/css/icons.css">
-      <link rel="stylesheet" type="text/css" href="/VoiceOnline/resources/css/rangeSlider.css">
+      <!-- <link rel="stylesheet" type="text/css" href="/VoiceOnline/resources/css/rangeSlider.css"> -->
       <link rel="stylesheet" type="text/css" href="/VoiceOnline/resources/css/master.css">
       <link rel="stylesheet" type="text/css" href="/VoiceOnline/resources/css/responsive.css">
       <link rel="stylesheet" type="text/css" href="/VoiceOnline/resources/css/searchResult.css">
@@ -50,9 +50,10 @@
                               </div>
                               
                            </div>
-                           <div class="sRPromBanner hidden-sm hidden-xs col-md-12 col-lg-12" >
-                              <img style="width:1000px" alt="Promotional Banner" src="/VoiceOnline/resources/images/coming_soon.png" />
-                           </div>
+                           <div class="thanksForVisit">
+               <div><img class="thanksForVisitingImg" src="/VoiceOnline/resources/images/thanksForVisiting.png"/></div>
+               
+            </div>
                            <div class="sRPromBanner hidden-md hidden-lg col-sm-12 col-xs-12">
                               <img alt="Promotional Banner" src="/VoiceOnline/resources/images/Promotion-banner-mob.jpg" />
                            </div>
@@ -76,10 +77,10 @@
             <div class="fBtm">
               
             </div>
-            <div class="thanksForVisit">
+            <!-- <div class="thanksForVisit">
                <div><img class="thanksForVisitingImg" src="/VoiceOnline/resources/images/thanksForVisiting.png"/></div>
                
-            </div>
+            </div> -->
          </div>
          <!-- footer ends here -->
 		 <!-- https://cdep.accenture.com/cdep/ -->
