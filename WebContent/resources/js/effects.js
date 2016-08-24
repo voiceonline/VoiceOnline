@@ -23,13 +23,39 @@ $(document).ready(function(){
 	    	var welcomeText = "Welcome to Voisense!!";
 	    	responsiveVoice.speak(welcomeText);
 	    	responsiveVoice.speak("to search for a product say \"search... product name\"");
-	    	$('#start_button').click();
+	    	startMicrophone();
+	    	window.setTimeout( startMicrophone, 7000 );
+	    	window.setTimeout( captureValue, 7000 );
+	    	
 	    }
 	    
 	    
 	 }
+	 
+	
 	
 	}); 
+
+function startMicrophone(){
+	 $('#start_button').click();
+}
+
+function captureValue(){
+	var spokentext = $('#final_span').text();
+	var timeout = "";
+	alert(spokentext);
+	if(spokentext != null && spokentext != ""){
+	responsiveVoice.speak("selected product is "+ spokentext);
+	responsiveVoice.speak("please confirm if you wish to proceed with recognized product");
+	responsiveVoice.speak("For continuation please say yes else say no");
+	timeout = 3000;
+	}else{
+		responsiveVoice.speak("No product was detected, please search again");
+		timeout = 7000;
+	}
+	startMicrophone();
+	window.setTimeout( startMicrophone, timeout );
+}
 
 
 

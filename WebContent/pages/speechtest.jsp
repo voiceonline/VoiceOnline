@@ -1,94 +1,16 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
 
-<style>
-  * {
-    font-family: Verdana, Arial, sans-serif;
-  }
-  a:link {
-    color:#000;
-    text-decoration: none;
-  }
-  a:visited {
-    color:#000;
-  }
-  a:hover {
-    color:#33F;
-  }
-  .button {
-    background: -webkit-linear-gradient(top,#008dfd 0,#0370ea 100%);
-    border: 1px solid #076bd2;
-    border-radius: 3px;
-    color: #fff;
-    display: none;
-    font-size: 13px;
-    font-weight: bold;
-    line-height: 1.3;
-    padding: 8px 25px;
-    text-align: center;
-    text-shadow: 1px 1px 1px #076bd2;
-    letter-spacing: normal;
-  }
-  .center {
-    padding: 10px;
-    text-align: center;
-  }
-  .final {
-    color: black;
-    padding-right: 3px; 
-  }
-  .interim {
-    color: gray;
-  }
-  .info {
-    font-size: 14px;
-    text-align: center;
-    color: #777;
-    display: none;
-  }
-  .right {
-    float: right;
-  }
-  .sidebyside {
-    display: inline-block;
-    width: 45%;
-    min-height: 40px;
-    text-align: left;
-    vertical-align: top;
-  }
-  #headline {
-    font-size: 40px;
-    font-weight: 300;
-  }
-  #info {
-    font-size: 20px;
-    text-align: center;
-    color: #777;
-    visibility: hidden;
-  }
-  #results {
-    font-size: 14px;
-    font-weight: bold;
-    border: 1px solid #ddd;
-    padding: 15px;
-    text-align: left;
-    min-height: 150px;
-  }
-  #start_button {
-    border: 0;
-    background-color:transparent;
-    padding: 0;
-  }
-</style>
+
 
 <div id="info">
   
 
 <div class="right">
   <button id="start_button" onclick="startButton(event)">
-    <img id="start_img" class="mic_button" src="mic.gif" alt="Start"></button>
+    </button>
 </div>
-<div id="results">
+<div id="results" style="display:none">
   <span id="final_span" class="final"></span>
   <span id="interim_span" class="interim"></span>
   <p>
@@ -97,10 +19,10 @@
   
   
   <p>
-  <div id="div_language">
+  <div id="div_language" style="display:none">
     <select id="select_language" onchange="updateCountry()"></select>
     &nbsp;&nbsp;
-    <select id="select_dialect" style="display:none"></select>
+    <select id="select_dialect" ></select>
   </div>
 </div>
 <script>
@@ -199,16 +121,16 @@ if (!('webkitSpeechRecognition' in window)) {
   recognition.onstart = function() {
     recognizing = true;
     //showInfo('info_speak_now');
-    start_img.src = 'mic-animate.gif';
+    //start_img.src = 'mic-animate.gif';
   };
   recognition.onerror = function(event) {
     if (event.error == 'no-speech') {
-      start_img.src = 'mic.gif';
+     // start_img.src = 'mic.gif';
       //showInfo('info_no_speech');
       ignore_onend = true;
     }
     if (event.error == 'audio-capture') {
-      start_img.src = 'mic.gif';
+      //start_img.src = 'mic.gif';
      // showInfo('info_no_microphone');
       ignore_onend = true;
     }
@@ -226,7 +148,7 @@ if (!('webkitSpeechRecognition' in window)) {
     if (ignore_onend) {
       return;
     }
-    start_img.src = 'mic.gif';
+   // start_img.src = 'mic.gif';
     if (!final_transcript) {
       //showInfo('info_start');
       return;
@@ -314,7 +236,7 @@ function startButton(event) {
   ignore_onend = false;
   final_span.innerHTML = '';
   interim_span.innerHTML = '';
-  start_img.src = 'mic-slash.gif';
+ // start_img.src = 'mic-slash.gif';
   //showInfo('info_allow');
   showButtons('none');
   start_timestamp = event.timeStamp;
