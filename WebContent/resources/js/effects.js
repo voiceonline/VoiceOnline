@@ -104,6 +104,7 @@ function detectYOrN(spokentext) {
 		responsiveVoice
 		.speak("Thanks for your input! Please wait while we are searching for " + selectedProduct);
 			$('#search_box').val(selectedProduct);
+			searchitem();
 		
 	} else {
 		responsiveVoice
@@ -117,7 +118,11 @@ function searchitem(){
 	//form.setAttribute('action', 'xg');
 	//form.setAttribute('method', 'POST');
 	//form.appendChild($("input[id='searchterm']"));
-	$('#search-form').submit();
+	var searchItem  = $('#search_box').val();
+	if(searchItem && searchItem.trim() !== "") {
+		$('#search-form').submit();
+	}
+	
 }
 
 function startRecognizing(successCallback, endCallback) {
