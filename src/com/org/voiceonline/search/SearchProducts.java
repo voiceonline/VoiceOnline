@@ -13,13 +13,13 @@ public class SearchProducts {
 	public static void main(String args[]){
 		
 		SearchProducts searchProducts = new SearchProducts();
-		LinkedHashMap<String, Object> productList = searchProducts.search("shoe");
+		LinkedHashMap<String, Object> productList = searchProducts.search("shoe", null);
 		for(String key : productList.keySet()) {
 			productList.get(key);
 		}
 	}
 
-	public LinkedHashMap<String, Object> search(String searchText){
+	public LinkedHashMap<String, Object> search(String searchText, String prdId){
 		
 		LinkedHashMap<String, Object> mainProductMap = new LinkedHashMap<String, Object>();
 		ConnectionsUtil connectionsUtil = new ConnectionsUtil();
@@ -28,19 +28,28 @@ public class SearchProducts {
 		try{
 			LinkedHashMap<String, String> attributeMap = new LinkedHashMap<String, String>();
 			
-			searchText = searchText.replaceAll("[ ]+|^|$", "%");
+			searchText = searchText == null ? null : searchText.replaceAll("[ ]+|^|$", "%");
 			
 			String query = "select pm.product_id, pm.product_name,pm.description, category_name, attribute_name, attrib_value from "+ 
-							"(select * from product_master where product_name like '"+searchText+"') p "+
-							"inner join product_master pm on pm.product_id  = p.product_id "+
-							"inner join category_product_map cpm on cpm.product_id = p.product_id "+
-							"inner join category_master cm on cpm.category_id = cm.category_id " +
+							"product_master pm ";
+					
+							if(searchText != null && !searchText.equals("")){
+								query += "inner join (select * from product_master where product_name like '"+searchText+"') p on pm.product_id  = p.product_id ";
+							}
+							
+							query += "inner join category_product_map cpm on cpm.product_id = pm.product_id ";
+							if(prdId != null && !prdId.equals("")){
+								query += " and pm.product_id in("+prdId+")";
+							}
+									
+							query += "inner join category_master cm on cpm.category_id = cm.category_id " +
 							"inner join category_attribute_map cam on cm.category_id = cam.category_id "+
 							"inner join attribute_master attr on cam.attribute_id = attr.attribute_id "+
 							"inner join category_product_attrib_map cpam on "+
 							"cpam.category_product_map_id = cpm.category_product_map_id and cpam.category_attrib_map_id = cam.category_attribute_map_id "+
 							"order by cm.category_id, pm.product_id;";
-			
+			//System.out.println("query==>" + query);
+							
 			Statement stmt = conn.createStatement();
 			
 			ResultSet dataRS = stmt.executeQuery(query);
@@ -75,12 +84,13 @@ public class SearchProducts {
 				
 				count++;
 			}
-			productInfoMap.put(Constants.ATTRIB_MAP, attributeMap);
-			mainProductMap.put(existingProductId, productInfoMap);
-			
+			if(!productId.equals("")){
+				productInfoMap.put(Constants.ATTRIB_MAP, attributeMap);
+				mainProductMap.put(existingProductId, productInfoMap);
+			}
 			connectionsUtil.closeConnection(stmt);
 			
-			System.out.println("mainProductMap===>" +mainProductMap);
+			//System.out.println("mainProductMap===>" +mainProductMap);
 			
 		}catch(Exception ex){
 			ex.printStackTrace();

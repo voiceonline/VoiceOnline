@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+<%@page import="java.util.LinkedHashMap"%>
+<%@page import="com.org.voiceonline.search.SearchProducts"%>
+<%@page import="com.org.voiceonline.generic.Utils"%>
 <html>
 <head>
 <meta charset="UTF-8">
@@ -26,6 +29,22 @@
 </style>
 </head>
 <body>
+
+<%
+	String productId = Utils.getString(request.getParameter("productId"));
+	SearchProducts products = new SearchProducts();
+	
+	LinkedHashMap<String, Object> productMap = products.search(null, productId);
+	LinkedHashMap<String, Object> productInfoMap = null;
+	LinkedHashMap<String, String> attributeMap = null;
+	
+	/*if(productMap.size() > 0){
+	
+	 for(String key : productMap.keySet()){			
+		productInfoMap = (LinkedHashMap<String, Object>)productMap.get(key);
+		attributeMap = (LinkedHashMap<String, String>)productInfoMap.get(Constants.ATTRIB_MAP); */
+%>
+
 	<div class="page" id="pdp">
 		<!-- header -->
 		
