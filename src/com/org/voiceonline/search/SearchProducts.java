@@ -13,7 +13,10 @@ public class SearchProducts {
 	public static void main(String args[]){
 		
 		SearchProducts searchProducts = new SearchProducts();
-		searchProducts.search("shoe");
+		LinkedHashMap<String, Object> productList = searchProducts.search("shoe");
+		for(String key : productList.keySet()) {
+			productList.get(key);
+		}
 	}
 
 	public LinkedHashMap<String, Object> search(String searchText){
