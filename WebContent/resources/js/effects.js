@@ -1,5 +1,6 @@
 $(document).ready(function(){
 	console.log("ready");
+	var capturedValue = "";
 	
 	/*function searchitem(){
 		  alert("hello");
@@ -22,10 +23,10 @@ $(document).ready(function(){
 	    	
 	    	var welcomeText = "Welcome to Voisense!!";
 	    	responsiveVoice.speak(welcomeText);
-	    	responsiveVoice.speak("to search for a product say \"search... product name\"");
+	    	responsiveVoice.speak("to search for a product speak out your product name within 10 seconds\"");
 	    	startMicrophone();
-	    	window.setTimeout( startMicrophone, 7000 );
-	    	window.setTimeout( captureValue, 7000 );
+	    	window.setTimeout( startMicrophone, 15000 );
+	    	window.setTimeout( captureValue, 15000 );
 	    	
 	    }
 	    
@@ -41,20 +42,38 @@ function startMicrophone(){
 }
 
 function captureValue(){
-	var spokentext = $('#final_span').text();
+	var spokentext = captureSpokenValue();
 	var timeout = "";
 	alert(spokentext);
-	if(spokentext != null && spokentext != ""){
+	if(spokentext == "Yes"){
+		if(capturedValue != "undefined" && capturedValue != "" && capturedValue != null){
+		alert(capturedValue);
+		responsiveVoice.speak("We are proceeding with "+ capturedValue);
+		}
+	}else if(spokentext != null && spokentext != "" && (spokentext != "No")){
 	responsiveVoice.speak("selected product is "+ spokentext);
 	responsiveVoice.speak("please confirm if you wish to proceed with recognized product");
 	responsiveVoice.speak("For continuation please say yes else say no");
-	timeout = 3000;
+	capturedValue = spokentext;
+	timeout = 15000;
+	}else if(spokentext == "No"){
+		responsiveVoice.speak("Sorry for wrongly detecting your product, you can search your product after this message");
+		timeout = 15000;
 	}else{
 		responsiveVoice.speak("No product was detected, please search again");
-		timeout = 7000;
+		timeout = 10000;
 	}
+	if(spokentext != "Yes"){
 	startMicrophone();
 	window.setTimeout( startMicrophone, timeout );
+	window.setTimeout( captureValue, timeout + 2000 );
+	}
+}
+
+function captureSpokenValue(){
+	var spokentext = "";
+	spokentext = $('#final_span').text();
+	return spokentext;
 }
 
 
