@@ -1,3 +1,4 @@
+<%@page import="com.org.voiceonline.generic.Constants"%>
 <%@page import="java.util.LinkedHashMap"%>
 <%@page import="com.org.voiceonline.search.SearchProducts"%>
 <%@page import="com.org.voiceonline.generic.Utils"%>
@@ -14,7 +15,7 @@
       <script src='https://code.responsivevoice.org/responsivevoice.js'></script>
       <link rel="stylesheet" type="text/css" href="/VoiceOnline/resources/css/bootstrap.css">
       <link rel="stylesheet" type="text/css" href="/VoiceOnline/resources/css/icons.css">
-      <link rel="stylesheet" type="text/css" href="/VoiceOnline/resources/css/rangeSlider.css">
+      <!-- <link rel="stylesheet" type="text/css" href="/VoiceOnline/resources/css/rangeSlider.css"> -->
       <link rel="stylesheet" type="text/css" href="/VoiceOnline/resources/css/master.css">
       <link rel="stylesheet" type="text/css" href="/VoiceOnline/resources/css/responsive.css">
       <link rel="stylesheet" type="text/css" href="/VoiceOnline/resources/css/searchResult.css">
@@ -23,42 +24,33 @@
    </head>
    <body>
      <%@ include file="header.jsp" %>
-
+     <div class="sRShop marginB30">
+                   <div class="row featrHding marginB20">
+                      <span class="cpwTradebold">SHOP</span>
+	</div>
 	<% 
 		String searchterm = Utils.getString(request.getParameter("searchterm"));
 		SearchProducts searchProducts = new SearchProducts();
-		LinkedHashMap<String, Object> productList = searchProducts.search(searchterm);
+		LinkedHashMap<String, Object> productMap = searchProducts.search(searchterm);
+		LinkedHashMap<String, Object> productInfoMap = null;
+		LinkedHashMap<String, String> attributeMap = null;
 		
 		
-	%>
-	
-	 					<div class="sRShop marginB30">
-                              <div class="row featrHding marginB20">
-                                 <span class="cpwTradebold">SHOP</span>
-                                 
-                              </div>
-                              <div class="row featrCntnt marginB40">
-                                 <div class="img"><img src="/VoiceOnline/resources/images/sRPhone01.png" alt="Apple iPhone 6" /></div>
-                                 <div class="sRShopMobInfo">
-                                    <h2>Apple iPhone 6</h2>
-                                    <p>Available on Pay monthly, Pay as you go, SIM free and as on upgrade</p>
-                                 </div>
-                              </div>
-                              <div class="row featrCntnt marginB40">
-                                 <div class="img"><img src="/VoiceOnline/resources/images/sRPhone02.png" alt="Apple iPhone 6" /></div>
-                                 <div class="sRShopMobInfo">
-                                    <h2>Apple iPhone 5S</h2>
-                                    <p>Available on Pay monthly, Pay as you go, SIM free and as on upgrade</p>
-                                 </div>
-                              </div>
-                              <div class="row featrCntnt">
-                                 <div class="img"><img src="/VoiceOnline/resources/images/sRPhone01.png" alt="Apple iPhone 6" /></div>
-                                 <div class="sRShopMobInfo">
-                                    <h2>Apple iPhone 5c</h2>
-                                    <p>Available on Pay monthly, Pay as you go, SIM free and as on upgrade</p>
-                                 </div>
-                              </div>
-                           </div>
-
+		for(String key : productMap.keySet()){			
+			productInfoMap = (LinkedHashMap<String, Object>)productMap.get(key);
+			attributeMap = (LinkedHashMap<String, String>)productInfoMap.get(Constants.ATTRIB_MAP);
+%>
+	               
+                   <div class="row featrCntnt marginB40">
+                      <div class="img"><img style="width:50px;height:50px;" alt="<%=productInfoMap.get(Constants.PRODUCT_NAME) %>" src="/VoiceOnline/resources/images/coming_soon.png" /></div>
+                      <div class="sRShopMobInfo">
+                         <h2><%=productInfoMap.get(Constants.PRODUCT_NAME) %></h2>
+                         <p><%=productInfoMap.get(Constants.PRODUCT_DESC) %></p>
+                         <p><b>&#8377;<%=attributeMap.get("Price")%></b></p>
+                      </div>
+                   </div>              
+                
+  <%}%>
+ </div>
 </body>
 </html>

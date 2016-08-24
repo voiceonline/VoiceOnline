@@ -30,7 +30,7 @@ public class SearchProducts {
 			
 			searchText = searchText.replaceAll("[ ]+|^|$", "%");
 			
-			String query = "select pm.product_id, pm.product_name, category_name, attribute_name, attrib_value from "+ 
+			String query = "select pm.product_id, pm.product_name,pm.description, category_name, attribute_name, attrib_value from "+ 
 							"(select * from product_master where product_name like '"+searchText+"') p "+
 							"inner join product_master pm on pm.product_id  = p.product_id "+
 							"inner join category_product_map cpm on cpm.product_id = p.product_id "+
@@ -67,6 +67,7 @@ public class SearchProducts {
 					
 					productInfoMap.put(Constants.CATEGORY_NAME, dataRS.getString("category_name"));
 					productInfoMap.put(Constants.PRODUCT_NAME, dataRS.getString("product_name"));
+					productInfoMap.put(Constants.PRODUCT_DESC, dataRS.getString("description"));
 				}
 				
 				attributeMap.put(dataRS.getString("attribute_name"), dataRS.getString("attrib_value"));
