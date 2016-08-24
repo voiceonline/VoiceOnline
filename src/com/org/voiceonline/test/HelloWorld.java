@@ -1,13 +1,15 @@
 package com.org.voiceonline.test;
 
-import javax.sound.sampled.AudioFileFormat.Type;
-import javax.sound.sampled.*;
 import java.io.File;
+
+import javax.sound.sampled.AudioFileFormat;
+import javax.sound.sampled.AudioSystem;
+
 import net.sourceforge.javaflacencoder.FLACFileWriter;
 
 import com.darkprograms.speech.microphone.Microphone;
-import com.darkprograms.speech.recognizer.Recognizer;
 import com.darkprograms.speech.recognizer.GoogleResponse;
+import com.darkprograms.speech.recognizer.Recognizer;
 
  /**
    * Jarvis Speech API Tutorial

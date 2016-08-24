@@ -1,3 +1,4 @@
+<%@page import="com.org.voiceonline.recognize.RecognizeVoice"%>
 <%@page import="com.org.voiceonline.generic.Utils"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
@@ -6,22 +7,13 @@
 
 <%
 response.setCharacterEncoding("UTF-8");
-String page1 = Utils.getString(request.getParameter("page1"));
+String page1 = Utils.getString(request.getParameter("param"));
 
-/* if(page1.equals("InactiveRecord")){
-	String monId = Utils.getString(request.getParameter(Constants.MONITOR_ID));
-	String userId = Utils.getString(session.getAttribute(Constants.USER_ID));
-	System.out.println("userId==>" + userId + "==" + monId);
+if(page1.equals("recognize")){
 	
-	if(!monId.equals("") && !userId.equals("")){
-		LinkedHashMap<String, String> paramMap = new LinkedHashMap<String, String>();
-		paramMap.put(Constants.MONITOR_ID, monId);
-		paramMap.put(Constants.USER_ID, userId);
-		Reports reports = new Reports();
-		Integer success = reports.inactiveRecord(paramMap);
-		out.println(success);		
-	}else{
-		out.println("-1");
-	}
-} */
+	RecognizeVoice recognizeVoice = new RecognizeVoice();	
+	String recognizedText = recognizeVoice.recognize();
+	
+	out.println(recognizedText);
+} 
 %>

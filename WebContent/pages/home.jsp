@@ -8,11 +8,11 @@
       <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
       <title>Home</title>
       <link rel="stylesheet" type="text/css" href="/VoiceOnline/resources/css/bootstrap.css">
-      <link rel="stylesheet" type="text/css" href="/resources/css/icons.css">
-      <link rel="stylesheet" type="text/css" href="/resources/css/rangeSlider.css">
-      <link rel="stylesheet" type="text/css" href="/VoiceOnline//resources/css/master.css">
-      <link rel="stylesheet" type="text/css" href="/resources/css/responsive.css">
-      <link rel="stylesheet" type="text/css" href="/resources/css/searchResult.css">
+      <link rel="stylesheet" type="text/css" href="/VoiceOnline/resources/css/icons.css">
+      <link rel="stylesheet" type="text/css" href="/VoiceOnline/resources/css/rangeSlider.css">
+      <link rel="stylesheet" type="text/css" href="/VoiceOnline/resources/css/master.css">
+      <link rel="stylesheet" type="text/css" href="/VoiceOnline/resources/css/responsive.css">
+      <link rel="stylesheet" type="text/css" href="/VoiceOnline/resources/css/searchResult.css">
       <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,300,700' rel='stylesheet' type='text/css'>
       <link rel="stylesheet" type="text/css" href="fonts.css">
    </head>
@@ -75,7 +75,7 @@
                               <ul class="catData">
                                  <li>
                                     <div class="pull-left catDataImage">
-                                       <img src="../images/searchResult1.png"/>
+                                       <img src="/VoiceOnline/resources/images/searchResult1.png"/>
                                     </div>
                                     <div class="pull-left catDataMsg">
                                        <label>Apple iPhone 6 on O2 from just <span>&euro;</span>25 a month</label>
@@ -86,7 +86,7 @@
                                  </li>
                                  <li>
                                     <div class="pull-left catDataImage">
-                                       <img src="../images/searchResult2.png"/>
+                                       <img src="/VoiceOnline/resources/images/searchResult2.png"/>
                                     </div>
                                     <div class="pull-left catDataMsg">
                                        <label>Apple iPhone 6 accessories</label>
@@ -97,7 +97,7 @@
                                  </li>
                                  <li>
                                     <div class="pull-left catDataImage">
-                                       <img src="../images/searchResult3.png"/>
+                                       <img src="/VoiceOnline/resources/images/searchResult3.png"/>
                                     </div>
                                     <div class="pull-left catDataMsg">
                                        <label>Trade in your Apple iPhone</label>
@@ -116,7 +116,7 @@
                                        Not enough space to update your iPhone
                                     </div>
                                     <div class="pull-left catDataImage">
-                                       <img src="../images/searchResult4.png" class="pull-right"/>
+                                       <img src="/VoiceOnline/resources/images/searchResult4.png" class="pull-right"/>
                                     </div>
                                  </li>
                                  <li>
@@ -124,7 +124,7 @@
                                        Remove iCloud from your iPhone
                                     </div>
                                     <div class="pull-left catDataImage">
-                                       <img src="../images/searchResult5.png" class="pull-right"/>
+                                       <img src="/VoiceOnline/resources/images/searchResult5.png" class="pull-right"/>
                                     </div>
                                  </li>
                               </ul>
@@ -170,7 +170,7 @@
                      <ul class="catData">
                         <li>
                            <div class="pull-left catDataImage">
-                              <img src="../images/searchResult1.png">
+                              <img src="/VoiceOnline/resources/images/searchResult1.png">
                            </div>
                            <div class="pull-left catDataMsg">
                               <label>Apple iPhone 6 on O2 from just <span>€</span>25 a month</label>
@@ -181,7 +181,7 @@
                         </li>
                         <li>
                            <div class="pull-left catDataImage">
-                              <img src="../images/searchResult2.png">
+                              <img src="/VoiceOnline/resources/images/searchResult2.png">
                            </div>
                            <div class="pull-left catDataMsg">
                               <label>Apple iPhone 6 accessories</label>
@@ -192,7 +192,7 @@
                         </li>
                         <li>
                            <div class="pull-left catDataImage">
-                              <img src="../images/searchResult3.png">
+                              <img src="/VoiceOnline/resources/images/searchResult3.png">
                            </div>
                            <div class="pull-left catDataMsg">
                               <label>Trade in your Apple iPhone</label>
@@ -211,7 +211,7 @@
                               Not enough space to update your iPhone
                            </div>
                            <div class="pull-left catDataImage">
-                              <img src="../images/searchResult4.png" class="pull-right">
+                              <img src="/VoiceOnline/resources/images/searchResult4.png" class="pull-right">
                            </div>
                         </li>
                         <li>
@@ -219,7 +219,7 @@
                               Remove iCloud from your iPhone
                            </div>
                            <div class="pull-left catDataImage">
-                              <img src="../images/searchResult5.png" class="pull-right">
+                              <img src="/VoiceOnline/resources/images/searchResult5.png" class="pull-right">
                            </div>
                         </li>
                      </ul>
@@ -262,10 +262,10 @@
                               
                            </div>
                            <div class="sRPromBanner hidden-sm hidden-xs col-md-12 col-lg-12">
-                              <img alt="Promotional Banner" src="../images/Promotion-banner.jpg" />
+                              <img alt="Promotional Banner" src="/VoiceOnline/resources/images/Promotion-banner.jpg" />
                            </div>
                            <div class="sRPromBanner hidden-md hidden-lg col-sm-12 col-xs-12">
-                              <img alt="Promotional Banner" src="../images/Promotion-banner-mob.jpg" />
+                              <img alt="Promotional Banner" src="/VoiceOnline/resources/images/Promotion-banner-mob.jpg" />
                            </div>
                            <div class="sRShop marginB30">
                               <div class="row featrHding marginB20">
@@ -273,21 +273,21 @@
                                  
                               </div>
                               <div class="row featrCntnt marginB40">
-                                 <div class="img"><img src="../images/sRPhone01.png" alt="Apple iPhone 6" /></div>
+                                 <div class="img"><img src="/VoiceOnline/resources/images/sRPhone01.png" alt="Apple iPhone 6" /></div>
                                  <div class="sRShopMobInfo">
                                     <h2>Apple iPhone 6</h2>
                                     <p>Available on Pay monthly, Pay as you go, SIM free and as on upgrade</p>
                                  </div>
                               </div>
                               <div class="row featrCntnt marginB40">
-                                 <div class="img"><img src="../images/sRPhone02.png" alt="Apple iPhone 6" /></div>
+                                 <div class="img"><img src="/VoiceOnline/resources/images/sRPhone02.png" alt="Apple iPhone 6" /></div>
                                  <div class="sRShopMobInfo">
                                     <h2>Apple iPhone 5S</h2>
                                     <p>Available on Pay monthly, Pay as you go, SIM free and as on upgrade</p>
                                  </div>
                               </div>
                               <div class="row featrCntnt">
-                                 <div class="img"><img src="../images/sRPhone01.png" alt="Apple iPhone 6" /></div>
+                                 <div class="img"><img src="/VoiceOnline/resources/images/sRPhone01.png" alt="Apple iPhone 6" /></div>
                                  <div class="sRShopMobInfo">
                                     <h2>Apple iPhone 5c</h2>
                                     <p>Available on Pay monthly, Pay as you go, SIM free and as on upgrade</p>
@@ -314,7 +314,7 @@
               
             </div>
             <div class="thanksForVisit">
-               <div><img class="thanksForVisitingImg" src="../images/thanksForVisiting.png"/></div>
+               <div><img class="thanksForVisitingImg" src="/VoiceOnline/resources/images/thanksForVisiting.png"/></div>
                
             </div>
          </div>
@@ -331,12 +331,12 @@
          <span class="icons UpW"></span>
       </div>
 	  <script src='https://code.responsivevoice.org/responsivevoice.js'></script>
-      <script src="../js/jquery.js"></script>	
-      <script src="../js/slider.js"></script>
-      <script src="../js/bootstrap.js"></script>
-      <script src="../js/nicescroll.js"></script>
-      <script src="../js/custSelect.js"></script>
-      <script src="../js/effects.js"></script>
+      <script src="/VoiceOnline/resources/js/jquery.js"></script>	
+      <script src="/VoiceOnline/resources/js/slider.js"></script>
+      <script src="/VoiceOnline/resources/js/bootstrap.js"></script>
+      <script src="/VoiceOnline/resources/js/nicescroll.js"></script>
+      <script src="/VoiceOnline/resources/js/custSelect.js"></script>
+      <script src="/VoiceOnline/resources/js/effects.js"></script>
       
 	  <script>
 	  function searchitem(){
