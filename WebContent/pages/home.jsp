@@ -52,6 +52,8 @@
       
 
 	<%@ include file="footer.jsp" %>
+	<script src="/VoiceOnline/resources/js/home.js"></script>
+	
 	  
    </body>
 </html>

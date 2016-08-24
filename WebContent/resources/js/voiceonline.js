@@ -1,35 +1,5 @@
 var recognition, selectedProduct;
 
-$(document)
-		.ready(
-				function() {
-					console.log("ready");
-					var capturedValue = "";
-
-					
-					initRecognition();
-					responsiveVoice.OnVoiceReady = function() {
-						if (responsiveVoice.voiceSupport()) {
-							responsiveVoice
-									.setDefaultVoice("US English Female");
-
-							var welcomeText = "Welcome to Voisense!!";
-							//responsiveVoice.speak(welcomeText);
-							responsiveVoice
-									.speak(welcomeText + "to search for a product speak out your product name ");
-							
-							startRecognizing(speakOutProduct);
-							//startMic();stopMic
-							//startMicrophone();
-							//window.setTimeout( startMicrophone, 15000 );
-							//window.setTimeout( captureValue, 15000 );
-
-						}
-
-					}
-
-				});
-
 function startMicrophone() {
 	console.log('startMicrophone');
 	$('#start_button').click();

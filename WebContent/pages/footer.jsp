@@ -22,4 +22,4 @@
 <%--  <%@include file="speechtest.jsp" %> --%>
 <script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="/VoiceOnline/resources/js/effects.js"></script>
+<script src="/VoiceOnline/resources/js/voiceonline.js"></script>
