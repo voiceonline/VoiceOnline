@@ -62,5 +62,8 @@
 		}
   %>
  </div>
+ 
+ 	<%@ include file="footer.jsp" %>
+ 	<script src="/VoiceOnline/resources/js/searchResults.js"></script>
 </body>
 </html>

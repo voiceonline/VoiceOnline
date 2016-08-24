@@ -1,5 +1,22 @@
-<%-- <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%> --%>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+   <head>
+      <meta charset="UTF-8">
+      <meta name="format-detection" content="telephone=no">
+      <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+      <title>Home</title>
+      <script src='https://code.responsivevoice.org/responsivevoice.js'></script>
+      <link rel="stylesheet" type="text/css" href="/VoiceOnline/resources/css/bootstrap.css">
+      <link rel="stylesheet" type="text/css" href="/VoiceOnline/resources/css/icons.css">
+      <link rel="stylesheet" type="text/css" href="/VoiceOnline/resources/css/rangeSlider.css">
+      <link rel="stylesheet" type="text/css" href="/VoiceOnline/resources/css/master.css">
+      <link rel="stylesheet" type="text/css" href="/VoiceOnline/resources/css/responsive.css">
+      <link rel="stylesheet" type="text/css" href="/VoiceOnline/resources/css/searchResult.css">
+      <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,300,700' rel='stylesheet' type='text/css'>
+      <link rel="stylesheet" type="text/css" href="fonts.css">
+   </head>
   <!-- header -->
          <div class="header">
             <div class="hTop">
@@ -46,8 +63,8 @@
                            </span>
                         </div>
                         
-                        </form>
-                        <div class="searchResult">
+                      </form>
+                       <!--  <div class="searchResult">
                            <div class="searchCategories">
                               <label class="catTitle">RECOMENDED</label>
                               <ul class="catData">
@@ -117,8 +134,12 @@
                            <div class="allResult">
                               <a href="#">View all search results</a>
                            </div>
-                        </div>
+                        </div> -->
                      </div>
+                      <div class="col-lg-4 col-sm-4 col-md-4 col-xs-12"> 
+                      	<img id="mic_status" src="" width="50px" height="50px" />
+                      </div>
+                     
                      <div class="col-lg-4 col-sm-4 col-md-4 col-xs-12">
                         <div class="appNav pull-right">
                            <ul class="horizontal">

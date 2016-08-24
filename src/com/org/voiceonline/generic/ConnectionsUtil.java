@@ -26,7 +26,7 @@ public class ConnectionsUtil {
 			if(conn == null){
 				Class.forName("com.mysql.jdbc.Driver");
 				conn=DriverManager.getConnection(  
-				"jdbc:mysql://localhost:3306/voiceonline","root","admin");
+				"jdbc:mysql://localhost:3306/voiceonline","root","root1234");
 			}
 
 		} catch (Exception ex) {
