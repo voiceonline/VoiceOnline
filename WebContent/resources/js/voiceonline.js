@@ -1,6 +1,6 @@
-var recognition, selectedProduct;
+var recognition, selectedProduct, cartValue = [""];
 
-
+displayOnloadCount();
 function searchitem(){
 	
 	var searchItem  = $('#search_box').val();
@@ -105,5 +105,11 @@ function initRecognition(onResultCallback, onEndCallback) {
 
 		};
 
+	}
+}
+function displayOnloadCount(){
+	var cartCount = localStorage.getItem('productCount');
+	if(cartCount != null && typeof cartCount != "undefined" && cartCount != ""){
+	$('.BasketH').text("(" + cartCount + ")");
 	}
 }
