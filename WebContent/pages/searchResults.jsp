@@ -1,3 +1,8 @@
+<%@page import="com.org.voiceonline.search.Product"%>
+<%@page import="java.util.List"%>
+<%@page import="org.json.JSONArray"%>
+<%@page import="com.google.gson.Gson"%>
+<%@page import="org.json.JSONObject"%>
 <%@page import="com.org.voiceonline.generic.Constants"%>
 <%@page import="java.util.LinkedHashMap"%>
 <%@page import="com.org.voiceonline.search.SearchProducts"%>
@@ -33,25 +38,45 @@
 	<% 
 		String searchterm = Utils.getString(request.getParameter("searchterm"));
 		SearchProducts searchProducts = new SearchProducts();
-		LinkedHashMap<String, Object> productMap = searchProducts.search(searchterm, null);
+		List<Product> productList = searchProducts.searchList(searchterm, null);
 		LinkedHashMap<String, Object> productInfoMap = null;
 		LinkedHashMap<String, String> attributeMap = null;
 		
-		if(productMap.size() > 0){
 		
-		for(String key : productMap.keySet()){			
-			productInfoMap = (LinkedHashMap<String, Object>)productMap.get(key);
-			attributeMap = (LinkedHashMap<String, String>)productInfoMap.get(Constants.ATTRIB_MAP);
-%>
+		String productJsonList =  new Gson().toJson(productList);
+		//JSONObject productJsonList=new JSONObject(productList.toString());
+		//JSONArray productList = new JSONArray("["+productObjList.toString()+"]");
+		
+		
+		%>
+		
+		<script>
+				var productList = <%=productJsonList%>;
+				var searchterm = "<%=searchterm%>";
+		</script>
+		
+		 
+		
+		<% if(productList.size() > 0){ 			
+		%> 
+		
+		<div class="row featrCntnt marginB40"> <%= productList.size() %> products found for "<b><%=  searchterm  %> </b>" </div> <%
+		for(Product product : productList){			
+			attributeMap = (LinkedHashMap<String, String>)product.getAttributes();
+			
+			
+		%>
 	               
                    <div class="row featrCntnt marginB40">
-                      <div class="img"><img style="width:50px;height:50px;" alt="<%=productInfoMap.get(Constants.PRODUCT_NAME) %>" src="/VoiceOnline/resources/images/coming_soon.png" /></div>
+                      <div class="img"><img style="width:50px;height:50px;" alt="<%=product.getName()%>" src="/VoiceOnline/resources/images/coming_soon.png" /></div>
                       <div class="sRShopMobInfo">
-                         <h2><%-- <a href="#" onclick="productDetails(<%=key%>)"> --%><%=productInfoMap.get(Constants.PRODUCT_NAME) %><!-- </a> --></h2>
-                         <p><%=productInfoMap.get(Constants.PRODUCT_DESC) %></p>
+                         <h2><%-- <a href="#" onclick="productDetails(<%=key%>)"> --%><%=product.getName() %><!-- </a> --></h2>
+                         <p><%=product.getDesc() %></p>
                          <p><b>&#8377;<%=attributeMap.get("Price")%></b></p>
                       </div>
-                   </div>              
+                   </div> 
+                   
+                   <hr />             
                 
   <%}
 		

@@ -26,13 +26,15 @@ $(document)
 
 				});
 
+
+
 function speakOutProduct(spokentext) {
 	// responsiveVoice.speak("selected product is " + spokentext);
 	selectedProduct = spokentext;
 	$('#search_box').val(selectedProduct);
-	responsiveVoice.speak("please confirm if you wish to proceed with "
-			+ selectedProduct);
-	responsiveVoice.speak("For continuation please say yes else say no");
+	/*responsiveVoice.speak("please confirm if you wish to proceed with  "
+			+ selectedProduct);*/
+	responsiveVoice.speak("Search product is " + selectedProduct + " for continuation please say YES else NO");
 	startRecognizing(detectYOrN);
 
 }

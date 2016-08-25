@@ -1,17 +1,24 @@
 var recognition, selectedProduct;
 
+if (responsiveVoice.voiceSupport()) {
+	responsiveVoice.setDefaultVoice("US English Female");
+}
 
-function searchitem(){
-	
-	var searchItem  = $('#search_box').val();
-	if(searchItem && searchItem.trim() !== "") {
+function voiceOnlineSpeak(toSpeak) {
+	responsiveVoice.speak(toSpeak);
+}
+
+function searchitem() {
+
+	var searchItem = $('#search_box').val();
+	if (searchItem && searchItem.trim() !== "") {
 		$('#search-form').submit();
 	}
-	
+
 }
 
 function startRecognizing(successCallback, endCallback) {
-	
+
 	initRecognition(successCallback, endCallback);
 	recognition.start();
 	console.log("mic on");
@@ -96,9 +103,9 @@ function initRecognition(onResultCallback, onEndCallback) {
 					interim_transcript += event.results[i][0].transcript;
 				}
 			}
-			
+
 			if (final_transcript !== "") {
-				console.log("reconized word: "+final_transcript);
+				console.log("reconized word: " + final_transcript);
 				onResultCallback(final_transcript);
 				//stopMic();
 			}

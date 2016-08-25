@@ -20,8 +20,8 @@
 	<span class="icons UpW"></span>
 </div>
 <%--  <%@include file="speechtest.jsp" %> --%>
-<script
-	src="resources/js/jquery.min.js"></script>
-	
-	<script src='resources/js/responsivevoice.js'></script>
+<script src="/VoiceOnline/resources/js/jquery.min.js"></script>
+<script src='/VoiceOnline/resources/js/responsivevoice.js'></script>
+<script src="/VoiceOnline/resources/js/underscore-min.js"></script>
 <script src="/VoiceOnline/resources/js/voiceonline.js"></script>
+
