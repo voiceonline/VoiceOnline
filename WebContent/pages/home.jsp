@@ -32,7 +32,7 @@
                               
                            </div>
                            <div class="sRPromBanner hidden-sm hidden-xs col-md-12 col-lg-12" >
-                              <img style="width:1000px" alt="Promotional Banner" src="/VoiceOnline/resources/images/coming_soon.png" />
+                              <img style="width:750px; height:500px" alt="Promotional Banner" src="/VoiceOnline/resources/images/coming_soon.png" />
                            </div>
                            <div class="sRPromBanner hidden-md hidden-lg col-sm-12 col-xs-12">
                               <img alt="Promotional Banner" src="/VoiceOnline/resources/images/Promotion-banner-mob.jpg" />
