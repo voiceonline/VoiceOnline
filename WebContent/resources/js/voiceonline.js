@@ -1,4 +1,4 @@
-var recognition, selectedProduct;
+var recognition, selectedProduct, cartValue = [""];
 
 if (responsiveVoice.voiceSupport()) {
 	responsiveVoice.setDefaultVoice("US English Female");
@@ -7,7 +7,7 @@ if (responsiveVoice.voiceSupport()) {
 function voiceOnlineSpeak(toSpeak) {
 	responsiveVoice.speak(toSpeak);
 }
-
+displayOnloadCount();
 function searchitem() {
 
 	var searchItem = $('#search_box').val();
@@ -112,5 +112,11 @@ function initRecognition(onResultCallback, onEndCallback) {
 
 		};
 
+	}
+}
+function displayOnloadCount(){
+	var cartCount = localStorage.getItem('productCount');
+	if(cartCount != null && typeof cartCount != "undefined" && cartCount != ""){
+	$('.BasketH').text("(" + cartCount + ")");
 	}
 }
