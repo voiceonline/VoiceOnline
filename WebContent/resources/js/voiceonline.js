@@ -44,6 +44,7 @@ function initRecognition(onResultCallback, onEndCallback) {
 		recognition.continuous = true;
 		recognition.interimResults = true;
 		recognition.onstart = function() {
+			console.log("Recognition started");
 			//recognizing = true;
 			//showInfo('info_speak_now');
 			$('#mic_status').attr('src', 'resources/images/mic-animate.gif');
@@ -69,6 +70,8 @@ function initRecognition(onResultCallback, onEndCallback) {
 			}
 		};
 		recognition.onend = function() {
+			
+			console.log("Recognition ended");
 			recognizing = false;
 			/*if (ignore_onend) {
 				return;
@@ -95,6 +98,7 @@ function initRecognition(onResultCallback, onEndCallback) {
 			 }*/
 		};
 		recognition.onresult = function(event) {
+			console.log("Recognition result recieved");
 			var final_transcript = "", interim_transcript = '';
 			for (var i = event.resultIndex; i < event.results.length; ++i) {
 				if (event.results[i].isFinal) {

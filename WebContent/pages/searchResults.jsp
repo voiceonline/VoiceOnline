@@ -82,7 +82,7 @@
 		
 		}else{
 			%><div class="row featrCntnt marginB40">
-                      <h3>No Records found.</h3>
+                      <h3>No products found.</h3>
                    </div><%
 		}
   %>

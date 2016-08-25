@@ -2,7 +2,6 @@
  * 
  */
 function updateCartValue(obj){
-	//obj = [{"3":{"PRODUCT_DESC":"The smooth, continuous unibody design created for iPhone 6 comes to iPhone 6s. Its familiar form feels just right in your hand. And now there are four stunning ?nishes to choose from: gold, silver, space grey, and the new rose gold.","ATTRIB_MAP":{"Brand":"Hipster","Price":"1245","Size":"8 D","Color":"Navy","ASIN":"B01D6R0OUE"},"CATEGORY_NAME":"Shoes","PRODUCT_NAME":"Apple iPhone 6s"}}];
 	
 	var cartValue = localStorage.getItem('cartData');
 	if(typeof cartValue != "undefied" && cartValue != null && cartValue != ""){
@@ -103,6 +102,8 @@ function speakNoOfProducts() {
 	if (productList && productList.length > 0) {
 		voiceOnlineSpeak(productList.length + " products found for "
 				+ searchterm);
+	} else {
+		voiceOnlineSpeak("No products found");
 	}
 
 }
@@ -122,6 +123,7 @@ function checkIfCart(spokenWord) {
 	if(spokenWord && spokenWord.trim().toLowerCase() === "yes" ) {
 		addToCart();
 	} else if(spokenWord && spokenWord.trim().toLowerCase() === "no"){
+		voiceOnlineSpeak("Moving to next product");
 		productNumber++;
 		speakOutProduct(productList);
 		
@@ -133,7 +135,10 @@ function checkIfCart(spokenWord) {
 }
 
 function addToCart() {
-	console.log("add to cart clicked");
+	
+	voiceOnlineSpeak(productList[productNumber].name + " has been addded to your shopping cart");
+	updateCartValue(productList[productNumber]);
+	console.log(JSON.stringify(localStorage.getItem('cartData')));
 	
 	
 }
