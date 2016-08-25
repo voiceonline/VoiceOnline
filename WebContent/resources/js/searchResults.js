@@ -46,7 +46,7 @@ function speakOutProduct(productList) {
 	console.log("product number  " + productNumber);
 	if(productList &&  productNumber < productList.length) {
 		product = productList[productNumber];
-	}
+	
 	
 	/*for ( var productId in product) {
 		// for(var productProp in product[productId]) {
@@ -91,10 +91,12 @@ function speakOutProduct(productList) {
 
 	}
 	voiceOnlineSpeak("Product Name " + productName);
-	//voiceOnlineSpeak("Product description " + productDesc);
+	voiceOnlineSpeak("Product description " + productDesc);
 	voiceOnlineSpeak("Product price in " + price);
 
 	confirmProductToCart(product);
+	
+	}
 }
 
 function speakNoOfProducts() {
@@ -102,6 +104,7 @@ function speakNoOfProducts() {
 	if (productList && productList.length > 0) {
 		voiceOnlineSpeak(productList.length + " products found for "
 				+ searchterm);
+		voiceOnlineSpeak("Listing searched products ....");
 	} else {
 		voiceOnlineSpeak("No products found");
 	}
@@ -148,7 +151,7 @@ $(document).ready(function() {
 
 	responsiveVoice.OnVoiceReady = function() {
 		speakNoOfProducts();
-		voiceOnlineSpeak("Listing searched products ....");
+		
 		
 		
 		//for ( var product in productList) {
