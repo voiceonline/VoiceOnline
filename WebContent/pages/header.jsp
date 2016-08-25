@@ -7,7 +7,7 @@
       <meta name="format-detection" content="telephone=no">
       <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
       <title>Home</title>
-      <script src='https://code.responsivevoice.org/responsivevoice.js'></script>
+     
       <link rel="stylesheet" type="text/css" href="/VoiceOnline/resources/css/bootstrap.css">
       <link rel="stylesheet" type="text/css" href="/VoiceOnline/resources/css/icons.css">
       <link rel="stylesheet" type="text/css" href="/VoiceOnline/resources/css/rangeSlider.css">

@@ -35,7 +35,7 @@ function initRecognition(onResultCallback, onEndCallback) {
 		//start_button.style.display = 'inline-block';
 		recognition = new webkitSpeechRecognition();
 		recognition.continuous = true;
-		recognition.interimResults = false;
+		recognition.interimResults = true;
 		recognition.onstart = function() {
 			//recognizing = true;
 			//showInfo('info_speak_now');
